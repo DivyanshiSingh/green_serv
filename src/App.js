@@ -6,10 +6,11 @@ import Portfolio from './Container/Portfolio';
 import Blog from './Container/Blog';
 import Contact from './Container/Contact';
 import Error from './Container/Error';
-import Navbar from './Components/Navbar';
+
 import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
