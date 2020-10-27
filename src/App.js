@@ -1,15 +1,30 @@
 import React from 'react';
-import Navbar from "./components/Navbar/NavBar";
-import './App.css';
+import Home from './Container/Home';
+import About from './Container/About';
+import Services from './Container/Services';
+import Portfolio from './Container/Portfolio';
+import Blog from './Container/Blog';
+import Contact from './Container/Contact';
+import Error from './Container/Error';
+import Navbar from './Components/Navbar';
+import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <navBar/>
-    </div>
-  );
+      <main>
+        <Navbar/>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About} />
+          <Route path="/services" component={Services} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={Contact} />
+          <Route component={Error} />        
+        </Switch>
+      </main>
+  )
 }
-
 export default App;
