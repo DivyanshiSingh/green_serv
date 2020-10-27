@@ -28,18 +28,16 @@
     height:350px;
     display: flex;
     
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: space-between;
-    /* background-position: center;
-    background-size:cover; */
+    
 }
 .history-image2{
     background-image: url('../images/home_history_img2.jpg');
     height:300px;
     display: flex;
     
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: space-between;
-    /* background-position: center;
-    background-size:cover; */
+    
 }
