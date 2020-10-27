@@ -1,0 +1,45 @@
+.image{
+    background-image: url('../images/home_image.jpg');
+    height:400px;
+    background-position: center;
+    background-size:cover;
+}
+.banner{
+    height:120px;
+    width: 100%;
+    background-color: #02375e;
+    /* color: aliceblue; */
+}
+.banner h2{
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+}
+.banner h3 {
+    color: rgba(109, 140, 163, 1);
+    text-align: center;
+    padding: 3px;
+}
+.text{
+    padding-top: 10px;
+}
+.history-image1{
+    background-image: url('../images/home_history_img1.jpg');
+    height:350px;
+    display: flex;
+    
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* background-position: center;
+    background-size:cover; */
+}
+.history-image2{
+    background-image: url('../images/home_history_img2.jpg');
+    height:300px;
+    display: flex;
+    
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* background-position: center;
+    background-size:cover; */
+}
