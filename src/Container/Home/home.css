@@ -1,0 +1,56 @@
+.home{
+  background-image: linear-gradient(to bottom, rgba(238, 239, 241, 0.3), rgba(57, 85, 207, 0.73)), url('../../images/home_image.jpg');
+  height: 600px;
+  background-position: center;  
+  background-size: cover;
+  text-align: center;
+}
+.home__tagline{
+  margin: 0 auto;
+  padding-top: 12rem;
+  
+}
+.home h1{
+  color: rgb(245, 245, 245);
+  letter-spacing: 1.5px;
+  
+  font-size: 2.5rem;
+}
+.home p{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.home p {
+  color: white;
+}
+.home__action{
+  margin-top: 3rem;
+}
+.home__action a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 1em 1.5em;
+  transition: ease-in 0.2s;
+}
+.home__action a:hover{
+  color: #02375e;
+  background: #fff;
+  transition: ease-in 0.2s;
+}
+
+.home__extra{
+  height: 80px;
+  background: #02375e;
+  text-align: center;
+  
+}
+.home__extra h1{
+  padding-top: 20px;
+  color: white;
+  letter-spacing: 1.2px;
+  
+}
