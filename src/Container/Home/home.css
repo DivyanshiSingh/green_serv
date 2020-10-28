@@ -54,3 +54,53 @@
   letter-spacing: 1.2px;
   
 }
+.flex-container {
+  display: flex;
+  background-color: white;
+  height: 500px;
+  
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  
+  
+}
+.img1{
+  background-image: url('../../images/home_history_img1.jpg');
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center; 
+  height: 380px;
+  width: 27%
+}
+.img2{
+  background-image: url('../../images/home_history_img2.jpg');
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center; 
+  height: 300px;
+  width: 30%
+}
+.text{
+  height: 380px;
+  width: 50%;
+  padding-left: 30px;
+  
+}
+.text h1{
+  color: #02375e;
+  /* color: black; */
+
+}
+.paragraph{
+  padding-top: 30px;
+  color: rgb(65, 63, 63);
+}
+.extra{
+  height: 70px;
+}
