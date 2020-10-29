@@ -1,0 +1,92 @@
+.team_intro_heading{
+    font-size: 50px;
+    margin-left: 250px;
+    color: black;
+    font-weight: 600;
+    
+}
+.team_intro1, .team_intro2, .team_intro3, .team_intro4{
+    display: flex;
+    height: 300px;
+    width:100%;
+    /* background-color: pink; */
+    padding-left:250px;
+    padding-right:200px;
+    /* justify-content: space-between; */
+    
+}
+.member1_img, .member2_img, .member3_img, .member4_img{
+    height: 300px;
+    width: 40%;
+    background-color:black;
+}
+.member1_intro, .member2_intro, .member3_intro, .member4_intro{
+    height: 300px;
+    width: 40%;
+    /* background-color: greenyellow; */
+}
+.extra_between{
+    height:300px;
+    width:10%;
+    background-color:white;
+}
+.member4_img{
+    background-image: url('../../images/divyanshi.jpg');
+}
+.member2_img{
+    background-image: url('../../images/golu.jpg');
+}
+.p1{
+    color: rgb(82, 81, 81);
+    font-weight: 600;
+}
+.name{
+    color: rgb(44, 43, 43);
+    font-size: 20px;
+    font-weight: 600;
+}
+.introduction{
+    color: rgb(82, 81, 81);
+    font-size:13px;
+}
+.banner2{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    background-color:#c5e1f5;
+    
+}
+.durability, .modern, .professional{
+    height: 200px;
+    width: 33.33%;
+    padding-top: 130px;
+    
+}
+.banner2_1{
+    font-size:20px;
+    color:#02375e;
+    font-weight: 800;
+    text-align: center;
+}
+.banner2_2{
+    font-size:15px;
+    color:#727374;
+    font-weight: 500;
+    text-align: center;
+}
+.p_quote{
+    text-align: center;
+    color:rgb(153, 150, 150);
+    font-size: 15px;
+    font-weight: 500;
+}
+.extra_small{
+    height:50px;
+    width:100%;
+}
+.bottom{
+    height: 300px;
+    width: 100%;
+    background-color: #02375e;
+}
