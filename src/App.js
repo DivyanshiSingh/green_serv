@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Container/Home';
-import About from './Container/About';
+import About from './Container/AboutUs';
 import Services from './Container/Services';
 import Portfolio from './Container/Portfolio';
 import Blog from './Container/Blog';

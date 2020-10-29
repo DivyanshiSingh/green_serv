@@ -1,0 +1,34 @@
+.banner{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width:100%;
+    color: black;
+}
+.tag, .awards, .customers,.years{
+    height:200px;
+    width:25%;
+    background-color: #02375e;
+    /* padding: 20px; */
+}
+.tag_p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.awards_no, .customers_no, .years_no{
+    font-size:110px;
+    color: white;
+    font-weight: bold;
+    padding-left: 60px;
+}
+.awards_line, .customers_line, .years_line{
+    color:  #546f83;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.tag{
+    padding:20px;
+}
