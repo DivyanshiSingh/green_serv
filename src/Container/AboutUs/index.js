@@ -102,6 +102,24 @@ function About() {
             
             </div>
 
+            {/* quote */}
+            <div className="extra_small"></div>
+            <div className="quote">
+                <p className="p_quote">
+                “ We design your dreams and paint your imagination.
+                </p>
+                <p className="p_quote">
+                We decorate your living and embelish your relations.”
+                </p>
+                
+            </div>
+
+            {/* bottom contact */}
+            <div className="extra_small"></div>
+            <div className="bottom">
+
+            </div>
+
 
 
         </div>
