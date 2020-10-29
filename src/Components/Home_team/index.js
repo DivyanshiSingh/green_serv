@@ -1,7 +1,7 @@
 import React from "react";
 import Stepper from "../Stepper";
 import "./Home_team.css";
-
+import Contact from '../../images/contact.png';
 function HomeTeam() {
   return (
     <div className="container">
@@ -33,6 +33,13 @@ function HomeTeam() {
           <h1>Our process to make you dream true</h1>
         </div>
         <Stepper/>
+      </div>
+      <div className="home_contact">
+        <div className="heading">
+          <hr />
+          <h1>Get free consultation.<br/> Just leave a request below</h1>
+        </div>
+        <img className="home_contact_img" src={Contact}/>
       </div>
     </div>
   );

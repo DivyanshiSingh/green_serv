@@ -15,7 +15,7 @@ const Stepper = () => {
       <hr/>
       {StepperItem(2,"iNNITIATE")}
       <hr/>
-      {StepperItem(1,"iNNTIGRATE")}
+      {StepperItem(3,"iNNTIGRATE")}
     </div>
   )
 }
