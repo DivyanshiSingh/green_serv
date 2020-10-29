@@ -2,6 +2,7 @@ import React from "react";
 import Stepper from "../Stepper";
 import "./Home_team.css";
 import Contact from '../../images/contact.png';
+import InputComponent from "../InputComponent";
 function HomeTeam() {
   return (
     <div className="container">
@@ -35,9 +36,16 @@ function HomeTeam() {
         <Stepper/>
       </div>
       <div className="home_contact">
-        <div className="heading">
-          <hr />
-          <h1>Get free consultation.<br/> Just leave a request below</h1>
+        <div className="home_contact_left">
+          <div className="heading">
+            <hr />
+            <h1>Get free consultation.<br/> Just leave a request below</h1>
+          </div>
+          <div className="home_input">
+            <InputComponent type="text" placeholder= "Your phone number"/>
+            <a className="btn" href="#">Callback</a>
+          </div>
+          
         </div>
         <img className="home_contact_img" src={Contact}/>
       </div>

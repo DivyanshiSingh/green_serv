@@ -18,7 +18,7 @@
   .heading h1{
     letter-spacing: 1.2px;
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 2em;
   }
   .outer_team{
       display: flex;
@@ -72,5 +72,18 @@
 }
 
 .home_contact {
-  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home_contact_left{
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home_input{
+  display: flex;
+  justify-content: space-around;
 }
