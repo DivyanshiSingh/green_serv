@@ -1,6 +1,7 @@
 import React from 'react';
 import About_banner from '../../Components/About_banner/index';
 import './about.css';
+import Bottom from '../../Components/Bottom';
 
 
 function About() {
@@ -116,11 +117,9 @@ function About() {
 
             {/* bottom contact */}
             <div className="extra_small"></div>
-            <div className="bottom">
+            
 
-            </div>
-
-
+            <Bottom/>
 
         </div>
     )
