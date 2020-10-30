@@ -1,11 +1,11 @@
 .container{
-  padding: 0 100px
+  padding: 30px 0;
 }
 .team{
   padding: 30px 0;
 }
 .heading{
-    color: #02375e;
+    color: #2b6b68;
     display: flex;
     align-items: center;
     width: 100%;
@@ -29,7 +29,7 @@
   .number_outer{
     height: 400px;
     width: 50%;
-    background-color: #02375e;
+    background-color: #2b6b68;
   }
   .number{
     font-size: 250px;
@@ -73,8 +73,13 @@
 
 .home_contact {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
+  padding: 0 80px;
+  background: rgb(240, 240, 240);
+  height: 400px;
+  margin-bottom: 1em;
 }
 .home_contact_left{
   width: 80%;
@@ -85,5 +90,25 @@
 }
 .home_input{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home_input a {
+  text-decoration: none;
+  background: #2b6b68;
+  color: #fff;
+  padding: 1em 2em;
+  margin: 0 0.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.home_input a:hover{
+  background-color: #235754;
+  transition: all 0.3s ease-in;
+}
+
+.home_contact_img{
+  position: absolute;
+  top:-10%;
+  left: 65%;
 }

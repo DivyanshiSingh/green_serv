@@ -11,6 +11,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import Navbar from './Components/Navbar';
+import Bottom from './Components/Bottom';
 
 function App() {
   return (
@@ -28,7 +29,9 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route component={Error} />        
         </Switch>
+
         </div>
+        <Bottom/>
       </main>
   )
 }
