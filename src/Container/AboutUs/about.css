@@ -9,10 +9,8 @@
     display: flex;
     height: 300px;
     width:100%;
-    /* background-color: pink; */
     padding-left:250px;
     padding-right:200px;
-    /* justify-content: space-between; */
     
 }
 .member1_img, .member2_img, .member3_img, .member4_img{
@@ -84,4 +82,74 @@
 .extra_small{
     height:50px;
     width:100%;
+}
+.out{
+    display: flex;
+    height: 500px;
+    width:100%;
+    background-color: #727374;
+    justify-content: space-evenly;
+}
+.person1{
+    height:500px;
+    width:25%;
+    background-color: white;
+}
+.person2{
+    height:500px;
+    width:25%;
+    background-color:white;
+}
+.person3{
+    height:500px;
+    width:25%;
+    background-color:white;
+}
+.person4{
+    height:500px;
+    width:25%;
+    background-color:white;
+}
+.extra_out{
+    height:500px;
+    width:5%;
+    background-color: white;
+}
+.person1_img{
+    height: 250px;
+    width:100%;
+    background-image: url('../../images/golu.jpg');
+}
+.person2_img{
+    height: 250px;
+    width:100%;
+    background-image: url('../../images/golu.jpg');
+}
+.person3_img{
+    height: 250px;
+    width:100%;
+    background-image: url('../../images/golu.jpg');
+
+}
+.person4_img{
+    height: 250px;
+    width:100%;
+    background-image: url('../../images/divyanshi.jpg');
+
+}
+.person_p{
+    color: rgb(102, 101, 101);
+    font-weight: 600;
+    /* text-align: center; */
+}
+.person_name{
+    color: rgb(44, 43, 43);
+    font-size: 20px;
+    font-weight: 600;
+    /* text-align: center; */
+}
+.person_introduction{
+    color: rgb(110, 110, 110);
+    font-size:13px;
+    /* text-align: center; */
 }
