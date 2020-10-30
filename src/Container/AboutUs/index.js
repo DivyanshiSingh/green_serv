@@ -15,12 +15,7 @@ function About() {
 
             <div className="extra"></div>
             
-                <p className="team_intro_heading">
-                    Designer services are 
-                </p>
-                <p className="team_intro_heading">
-                    no longer a luxury 
-                </p>
+{/*                 
             
             <div className="extra"></div>
             <div className="team_intro1">
@@ -83,8 +78,89 @@ function About() {
                     
                 </div>
             </div>
-            <div className="extra"></div>
+            <div className="extra"></div> */}
 
+            {/* heading */}
+
+            <div className="heading">
+            <hr />
+            <h1> A Team United by Shared Values </h1>{" "}
+            </div>{" "}
+            <br></br>
+            <br></br>
+
+            {/* team design 2 */}
+
+            <div className="out">
+                <div className="extra_out"></div>
+                <div className="person1">
+                    <div className="person1_img">
+
+                    </div>
+                    <br></br>
+                    <div className="person1_intro">
+                        <p className="person_p">Chief Technical Officer</p>
+                        <br></br>
+                        <p className="person_name">Divyanshi Singh</p>
+                        <br></br>
+                        <p className="person_introduction">Every Home has its own story and so the designing also differs. Our experienced designing team takes down your exact requirement and challenges in your existing setup. Basis that, we provide you with the best suitable designs.</p>
+
+                    </div>
+
+
+                </div>
+                <div className="extra_out"></div>
+                <div className="person2">
+                    <div className="person2_img">
+
+                    </div>
+                    <br></br>
+                    <div className="person1_intro">
+                        <p className="person_p">Chief Technical Officer</p>
+                        <br></br>
+                        <p className="person_name">Divyanshi Singh</p>
+                        <br></br>
+                        <p className="person_introduction">Every Home has its own story and so the designing also differs. Our experienced designing team takes down your exact requirement and challenges in your existing setup. Basis that, we provide you with the best suitable designs.</p>
+
+                    </div>
+
+                </div>
+                <div className="extra_out"></div>
+                <div className="person3">
+                    <div className="person3_img">
+
+                    </div>
+                    <br></br>
+                    <div className="person1_intro">
+                        <p className="person_p">Chief Technical Officer</p>
+                        <br></br>
+                        <p className="person_name">Divyanshi Singh</p>
+                        <br></br>
+                        <p className="person_introduction">Every Home has its own story and so the designing also differs. Our experienced designing team takes down your exact requirement and challenges in your existing setup. Basis that, we provide you with the best suitable designs.</p>
+
+                    </div>
+
+                </div>
+                <div className="extra_out"></div>
+                <div className="person4">
+                    <div className="person4_img">
+
+                    </div>
+                    <br></br>
+                    <div className="person1_intro">
+                        <p className="person_p">Chief Technical Officer</p>
+                        <br></br>
+                        <p className="person_name">Divyanshi Singh</p>
+                        <br></br>
+                        <p className="person_introduction">Every Home has its own story and so the designing also differs. Our experienced designing team takes down your exact requirement and challenges in your existing setup. Basis that, we provide you with the best suitable designs.</p>
+
+                    </div>
+
+                </div>
+                <div className="extra_out"></div>
+
+            </div>
+            <div className="extra"></div>
              {/* banner */}
 
             <div className="banner2">
@@ -117,9 +193,11 @@ function About() {
 
             {/* bottom contact */}
             <div className="extra_small"></div>
+
             
 
             <Bottom/>
+
 
         </div>
     )
