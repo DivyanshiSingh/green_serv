@@ -3,6 +3,8 @@ import Stepper from "../Stepper";
 import "./Home_team.css";
 import Contact from '../../images/contact.png';
 import InputComponent from "../InputComponent";
+import ScrollAnimation from "react-animate-on-scroll";
+import Projects from "../Projects";
 function HomeTeam() {
   return (
     <div className="container">
@@ -35,6 +37,10 @@ function HomeTeam() {
         </div>
         <Stepper/>
       </div>
+
+      <Projects/>
+
+
       <div className="home_contact">
         <div className="home_contact_left">
           <div className="heading">
@@ -47,8 +53,9 @@ function HomeTeam() {
           </div>
           
         </div>
-        <img className="home_contact_img" src={Contact}/>
+        <img className="home_contact_img" src={Contact} alt="contact_img"/>
       </div>
+      
     </div>
   );
 }

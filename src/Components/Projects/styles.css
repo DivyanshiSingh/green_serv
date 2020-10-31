@@ -1,0 +1,16 @@
+.projects{
+  padding: 60px 80px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.projects > div {
+  margin-right: 0.5em;
+}
+.projects_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 350px;
+  width: 50%;
+}
+

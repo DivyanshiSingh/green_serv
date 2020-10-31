@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import "./home.css";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import HomeTeam from "../../Components/Home_team";
+import HomeHistoryImage1 from '../../images/home_history_img1.jpg';
+import HomeHistoryImage2 from '../../images/home_history_img2.jpg';
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Home() {
   return (
@@ -17,11 +20,17 @@ function Home() {
         </div>
       </div>
       <div className="home__extra">
-        <h1>GreenServ Interiors</h1>
+        <ScrollAnimation animateIn="animate__fadeInUp">
+          <h1>GreenServ Interiors</h1>
+        </ScrollAnimation>
       </div>
       <div className="flex-container">
-        <div className="img1"></div>
-        <div className="img2"></div>
+        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+          <img src={HomeHistoryImage1} className="img1" alt="study_image"/>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInRight" animateOnce>
+        <img src={HomeHistoryImage2} className="img2" alt="study_image"/>
+        </ScrollAnimation>
         <div className="text">
           <h1>History of Our Creation</h1>
           <div className="paragraph">
