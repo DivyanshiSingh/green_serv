@@ -108,8 +108,10 @@
 .person4{
     height:500px;
     width:25%;
-    background-color:white;
+    background-color: white;
+    position: relative;
 }
+
 .extra_out{
     height:500px;
     width:5%;
@@ -130,6 +132,28 @@
     width:100%;
     background-image: url('../../images/golu.jpg');
 
+}
+.test_border{
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+.about_img{
+    height: 250px;
+    width:100%;
+    z-index: 100;
+    object-fit: cover;
+}
+.test_border::after{
+    content: '';
+    position: absolute;
+    background:#2b6b68;
+    width: 150px;
+    top:-13px;
+    height: 60%;
+    /* width: 50%; */
+    left: -13px;
+    z-index: -1;
 }
 .person4_img{
     height: 250px;

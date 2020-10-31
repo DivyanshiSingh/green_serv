@@ -2,7 +2,8 @@ import React from "react";
 import About_banner from "../../Components/About_banner/index";
 import "./about.css";
 import Bottom from "../../Components/Bottom";
-
+import Person4 from '../../images/divyanshi.jpg';
+import Person1 from '../../images/golu.jpg';
 function About() {
   return (
     <div>
@@ -84,7 +85,9 @@ function About() {
       <div className="out">
         <div className="extra_out"></div>
         <div className="person1">
-          <div className="person1_img"></div>
+        <div className="test_border">
+          <img src={Person1} alt="Divyanshi Singh" className="about_img"/>
+          </div>
           <br></br>
           <div className="person1_intro">
             <p className="person_p">Chief Technical Officer</p>
@@ -101,7 +104,9 @@ function About() {
         </div>
         <div className="extra_out"></div>
         <div className="person2">
-          <div className="person2_img"></div>
+        <div className="test_border">
+          <img src={Person1} alt="Divyanshi Singh" className="about_img"/>
+          </div>
           <br></br>
           <div className="person1_intro">
             <p className="person_p">Chief Technical Officer</p>
@@ -118,7 +123,9 @@ function About() {
         </div>
         <div className="extra_out"></div>
         <div className="person3">
-          <div className="person3_img"></div>
+        <div className="test_border">
+          <img src={Person4} alt="Divyanshi Singh" className="about_img"/>
+        </div>
           <br></br>
           <div className="person1_intro">
             <p className="person_p">Chief Technical Officer</p>
@@ -135,7 +142,10 @@ function About() {
         </div>
         <div className="extra_out"></div>
         <div className="person4">
-          <div className="person4_img"></div>
+          <div className="test_border">
+          <img src={Person4} alt="Divyanshi Singh" className="about_img"/>
+          </div>
+          
           <br></br>
           <div className="person1_intro">
             <p className="person_p">Chief Technical Officer</p>
