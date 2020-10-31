@@ -120,9 +120,20 @@
   color: #2b6b68;
   cursor: pointer;
 }
+.paragraph__read-more p:after {
+  content: '';
+  display:block;
+  width: 100%;
+  padding-top: 0.5em;
+  border-bottom: 2px solid #2b6b68;
+  transition: 0.5s;
+}
+.paragraph__read-more p:hover:after{
+  width: 0;
+}
 .arrow{
   color: #2b6b68 !important;
   font-size: 1rem !important;
-  transform: scale(5,1.2);
+  transform: scale(4,1.2);
   margin-left: 1.2em;
 }
