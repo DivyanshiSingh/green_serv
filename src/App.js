@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './Container/Home';
 import About from './Container/AboutUs';
 import Services from './Container/Services/index';
-import Portfolio from './Container/Portfolio';
+import Portfolio from './Container/Portfolio/index';
 import Blog from './Container/Blog';
 import Contact from './Container/Contact';
 import Error from './Container/Error';
