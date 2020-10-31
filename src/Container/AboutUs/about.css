@@ -5,6 +5,9 @@
     font-weight: 600;
     
 }
+.wrapper{
+    padding: 20px 80px;
+}
 .team_intro1, .team_intro2, .team_intro3, .team_intro4{
     display: flex;
     height: 300px;
@@ -176,4 +179,72 @@
     color: rgb(110, 110, 110);
     font-size:13px;
     /* text-align: center; */
+}
+
+.about_heading{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    padding-bottom: 8rem ;
+    padding-top: 4rem;
+}
+.about_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about_left h1{
+    font-size: 4rem;
+    color: #070c1f;
+    font-weight: 600;
+}
+.about_left h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #6b6b6b;
+    letter-spacing: 1px;
+}
+.about_left p {
+    text-align: justify;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    color: #070c1f;
+}
+.about_right{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.image_container1{
+    position: relative;
+}
+.image_container1::after{
+    content: '';
+    position: absolute;
+    background:#2b6b68;
+    width: 100px;
+    bottom:-7px;
+    height: 40%;
+    /* width: 50%; */
+    left: -11px;
+    z-index: -1;
+}
+.image_container2{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+.image_container2::after{
+    content: '';
+    position: absolute;
+    background:#2b6b68;
+    width: 100px;
+    bottom:-7px;
+    height: 40%;
+    /* width: 50%; */
+    right: -11px;
+    z-index: -1;
+}
+.image_container1 img, .image_container2 img{
+    height: 300px;
+    
 }
