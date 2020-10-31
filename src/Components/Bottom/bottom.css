@@ -2,13 +2,13 @@
     display:flex;
     height: 400px;
     width:100%;
-    background-color:#02375e;
+    background-color:#2b6b68;;
     
 }
 .bottom1{
     height: 400px;
     width: 40%;
-    background-color:#02375e;
+    background-color:#2b6b68;;
     padding-top: 100px;
     padding-left: 30px;
 }
@@ -68,7 +68,7 @@
 .lower_box{
     height: 200px;
     width:100%;
-    background-color:#02375e;
+    background-color:#2b6b68;;
 }
 .hr_line{
     height:0.5px;
@@ -79,7 +79,7 @@
     background-color:#1a405e;
 }
 .hr_div{
-    background-color: #02375e;
+    background-color: #2b6b68;;
 }
 .address_1{
     /* padding-top: 50px; */

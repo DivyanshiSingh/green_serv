@@ -29,4 +29,5 @@
 }
 .stepper-item-id:hover {
   background-color: #02375e;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }

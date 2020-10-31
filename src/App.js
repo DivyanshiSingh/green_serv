@@ -11,11 +11,15 @@ import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import Navbar from './Components/Navbar';
+import Bottom from './Components/Bottom';
 
 function App() {
   return (
       <main>
         <Navbar/>
+        <div className="main-wrapper">
+
+        
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
@@ -25,6 +29,9 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route component={Error} />        
         </Switch>
+
+        </div>
+        <Bottom/>
       </main>
   )
 }
