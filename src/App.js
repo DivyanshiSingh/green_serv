@@ -6,17 +6,35 @@ import Portfolio from './Container/Portfolio/index';
 import Blog from './Container/Blog';
 import Contact from './Container/Contact';
 import Error from './Container/Error';
+// import { Cube } from 'styled-loaders-react';
 
 import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import Navbar from './Components/Navbar';
 import Bottom from './Components/Bottom';
+// import CubeGrid from 'styled-loaders-react/lib/components/CubeGrid';
 
 function App() {
+  // state= {
+  //   loading:true
+  // }
+  // componentDidMount=()=>{
+  //   setTimeout(()=>{
+  //     this.setState({
+  //       loading:false
+  //     })
+  //   },3000)
+  // }
   return (
       <main>
+        {/* <div className="app">
+          {
+            this.state.loading ? <CubeGrid color="green" /> : "Your content"
+          }
+        </div> */}
         <Navbar/>
+
         <div className="main-wrapper">
 
         
