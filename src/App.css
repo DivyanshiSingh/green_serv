@@ -11,3 +11,9 @@
 .main-wrapper{
   padding-top: 65px;
 }
+main{
+  width:100%;
+}
+.loader{
+  margin: 0 auto;
+}

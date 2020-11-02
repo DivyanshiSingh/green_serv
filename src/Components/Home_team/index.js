@@ -30,13 +30,13 @@ function HomeTeam() {
           </div>{" "}
         </div>{" "}
       </div>
-      <div className="process">
+      {/* <div className="process">
         <div className="heading">
           <hr />
           <h1>Our process to make you dream true</h1>
         </div>
         <Stepper/>
-      </div>
+      </div> */}
 
       <Projects/>
 
