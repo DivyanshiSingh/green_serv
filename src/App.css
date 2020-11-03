@@ -11,10 +11,9 @@
 .main-wrapper{
   padding-top: 65px;
 }
-/* .app{
-  height: 100vh;
+main{
   width:100%;
-  display:flex;
-  justify-content: center;
-  align-items:center;
-} */
+}
+.loader{
+  margin: 0 auto;
+}

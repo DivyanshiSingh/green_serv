@@ -15,7 +15,7 @@ function index() {
                     </p>
                 </div>
                 <div className="chapter_img">
-                    {/* <img src="service1.jpg" alt="Girl in a jacket" width="500" height="600"/> */}
+                    
 
                 </div>
             </div>

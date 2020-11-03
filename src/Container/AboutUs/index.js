@@ -6,6 +6,12 @@ import Person4 from "../../images/divyanshi.jpg";
 import Person1 from "../../images/golu.jpg";
 import Service1 from "../../images/service1.jpg";
 import Service2 from "../../images/service2.jpg";
+import ScrollAnimation from "react-animate-on-scroll";
+import ThumbsUp from '@material-ui/icons/ThumbUpSharp';
+import House from '@material-ui/icons/HouseOutlined';
+import Team from '@material-ui/icons/Group';
+
+import { Icon } from "@material-ui/core";
 function About() {
   return (
     <div>
@@ -13,17 +19,23 @@ function About() {
         <div className="about_left">
           <h1>About Us</h1>
           <h4>Our History</h4>
-          <p>Every Home has its own story and so the designing also differs.
+          <ScrollAnimation animateIn="animate__bounceInDown">
+            <p>Every Home has its own story and so the designing also differs.
                 Our experienced designing team takes down your exact requirement
                 and challenges in your existing setup. Basis that, we provide
                 you with the best suitable designs.</p>
+          </ScrollAnimation>
         </div>
         <div className="about_right">
           <div className="image_container1">
-            <img src={Service1} alt="service"/>
+            <ScrollAnimation animateIn="animate__slideInLeft">
+              <img src={Service1} alt="service"/>
+            </ScrollAnimation>
           </div>
           <div className="image_container2">
+            <ScrollAnimation animateIn="animate__slideInRight">
             <img src={Service2} alt="service"/>
+            </ScrollAnimation>
           </div>
         </div>
       </div>
@@ -120,14 +132,17 @@ function About() {
       {/* banner */}
       <div className="banner2">
         <div className="durability">
+          <ThumbsUp className="banner2_icon"/>
           <p className="banner2_1">Durability</p>
           <p className="banner2_2">Exclusive 10 year durable</p>
         </div>
         <div className="modern">
+          <House className="banner2_icon"/>
           <p className="banner2_1">Modern interior</p>
           <p className="banner2_2">Exclusive 10 year warranty</p>
         </div>
         <div className="professional">
+          <Team className="banner2_icon"/>
           <p className="banner2_1">Professional team</p>
           <p className="banner2_2">Many awards in the interior design</p>
         </div>

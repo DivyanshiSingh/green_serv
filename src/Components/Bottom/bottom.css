@@ -1,64 +1,48 @@
 .bottom{
     display:flex;
-    height: 400px;
     width:100%;
+    padding: 30px 80px;
     background-color:#2b6b68;;
     
 }
 .bottom1{
-    height: 400px;
     width: 40%;
     background-color:#2b6b68;;
-    padding-top: 100px;
-    padding-left: 30px;
 }
 .bottom2, .bottom3, .bottom4{
-    height: 400px;
     width:20%;
-    padding-top: 100px;
-    align-items: right;
+    
     text-align: right;
     /* padding-left: 150px; */
-    padding-right:30px;
 
-}
-.newsletter_extra{
-    width:40%;
-    height:40px;
-}
-.email_extra{
-    width:40%;
-    height: 20px;
 }
 .news{
-    font-weight: 800;
+    font-weight: 500;
     color:white;
-
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    letter-spacing: 1px;
 }
 .Email_line{
-    color: #8b9aa7;
-    font-size: 15px;
-    font-weight: 500;
+    color: #f8f8f8;
+    font-size: 0.6em;
+    padding-top: 0.5em;
+    font-weight: 400;
 }
 .myText{
     width:250px;
-    height: 60px;
-    border: 2px solid white; 
-    background: transparent; 
-    outline: 2px;
-    padding: 10px;
+    padding: 1em 1.5em;
+    border: none;
+    outline: none;
 }
 .handles{
-    display: flex;
-    height: 40px;
-    width: 200px;
-
-
+    padding-top: 1em;
 }
 .insta, .fb{
     height: 50px;
     width: 50px;
-    background-color: #436986;
+    margin-right: 5px;
+    color: #fff;
 }
 .extra_insta_fb{
     height:40px;
@@ -83,19 +67,21 @@
 }
 .address_1{
     /* padding-top: 50px; */
-    color: #8b9aa7;
-    font-size: 15px;
-    font-weight: 500;
+    color: #ebe8e8;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 .bottom_3_items{
-    color: #8b9aa7;
-    font-size: 15px;
-    font-weight: 500;
+    color: #ebe8e8;
+    font-size:0.7em;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 .greenServ{
-    color: #8b9aa7;
-    font-size: 30px;
-    font-weight: 500;
+    color: #f8f8f8;
+    font-size: 0.7em;
+    font-weight: 400;
     margin-left:30px;
     padding-top: 80px;
 

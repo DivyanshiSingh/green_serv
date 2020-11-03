@@ -96,7 +96,6 @@ function Services() {
                 </div>
             </div>
             <div className="extra"></div>
-            <Bottom/>
         </div>
     )
 }

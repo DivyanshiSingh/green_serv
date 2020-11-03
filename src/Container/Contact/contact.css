@@ -1,0 +1,79 @@
+.contact_sub_heading{
+    color: grey;
+    font-weight: 500;
+    font-size: 22px;
+}
+.sub_heading{
+    padding-left: 30px;
+    width:70%;
+
+}
+.card{
+    display: flex;
+    
+    width:90%;
+    
+    border-radius :7px;
+    background-color: rgb(243, 241, 241);
+    margin:0 auto;
+    align-content: center;  
+    margin-bottom: 4em; 
+}
+.info{
+    
+    border-radius :7px;
+    width:35%;
+    
+    background-color: #2b6b68;
+    padding: 4em 4em;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:65%;
+    
+}
+.Contact_topic{
+    color: white;
+    
+    font-size: 40px;
+    font-weight: 600;
+}
+.info_1{
+    display:flex;
+    width:100%;
+    padding: 0.5em 0;
+    
+
+}
+.info_info_1{
+    color:white;
+    
+    
+}
+.section_1{
+    display:flex;
+    
+
+}
+.light{
+    color: #7caaa7;
+    font-weight: 600;
+   
+}
+.form_topic{
+    background-color: #2b6b68;
+    height:40px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.form_topic_p{
+    color: white;
+    font-size:20px;
+    font-weight:400;
+    text-align: center;
+}

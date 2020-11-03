@@ -10,11 +10,6 @@ function Navbar() {
             </div>
             <div className="navbar__nav">
                 <div className="navbar__elements">
-                <Link exact activeClassName="active-class" to="/blog">
-                    Blog
-                </Link>
-                </div>
-                <div className="navbar__elements">
                 <Link exact activeClassName="active-class" to="/contact">
                     Contact Us
                 </Link>
