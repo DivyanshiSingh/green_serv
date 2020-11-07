@@ -1,5 +1,6 @@
 .container{
   padding: 30px 0;
+  overflow: hidden;
 }
 .team{
   padding: 30px 80px;
@@ -110,5 +111,11 @@
 .home_contact_img{
   position: absolute;
   top:-10%;
-  left: 65%;
+  left: 62%;
+  /* width: 400px; */
+}
+
+.home_testimonial{
+  background-color: #2b6b68;
+  padding: 100px;
 }

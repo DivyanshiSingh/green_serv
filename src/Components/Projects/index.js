@@ -2,6 +2,8 @@ import React from "react";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import "./styles.css";
 import ScrollAnimation from "react-animate-on-scroll";
+import Carousel from "../Carousel";
+import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <section className="projects">
@@ -24,11 +26,12 @@ const Projects = () => {
         </ScrollAnimation>
         <div className="paragraph__read-more">
           <ArrowRightAltIcon className="arrow"/>
-          <p>View More</p>
+          <Link to="/portfolio">View More</Link>
         </div>
       </div>
       <div className="projects_right">
         {/* Use React slick here */}
+        <Carousel/>
       </div>
     </section>
   );
