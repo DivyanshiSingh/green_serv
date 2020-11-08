@@ -80,11 +80,15 @@
     text-align: center;
     letter-spacing: 1.1px;
 }
+.quote{
+    padding: 1em 0;
+}
 .p_quote{
     text-align: center;
-    color:rgb(153, 150, 150);
-    font-size: 15px;
-    font-weight: 500;
+    color:#070c1f;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1.2px;
 }
 .extra_small{
     height:50px;
@@ -253,4 +257,94 @@
 .image_container1 img, .image_container2 img{
     height: 300px;
     
+}
+
+.testimonial{
+    width: 100%;
+    padding: 50px 80px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    /* background: #333; */
+}
+.testimonial .car_container{
+    margin: 0 auto;
+}
+.testimonial .slick-prev{
+    display: block;
+    position: absolute;
+    background-color: teal;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    color: white;
+    top:24em;
+    left: 0em;
+    background-color: rgb(218, 216, 216);
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+.testimonial .slick-next{
+    display: block;
+    position: absolute;
+    background-color: teal;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    color: white;
+    top:24em;
+    left: 3.5em;
+    background-color: rgb(218, 216, 216);
+    text-align: center;
+    
+    color: rgb(54, 54, 54);
+}
+.testimonial .slick-list {
+    padding: 1em 0;
+}
+.testimonial_card{
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0 0 11px rgba(0,0,0,0.10);
+    -ms-box-shadow: 0 0 11px rgba(0,0,0,0.10);
+    -o-box-shadow: 0 0 11px rgba(0,0,0,0.10);
+    box-shadow: 0 0 11px rgba(0,0,0,0.10);
+    padding: 50px 40px;
+    margin: 0 10px;
+}
+.testimonial_card {
+    display: flex;
+    flex-direction: column;
+}
+.testimonial_card_head {
+    display: flex;
+}
+.testimonial_card_head img{
+    border-radius: 50%;
+}
+.testimonial_card_head .head_desc{
+    align-self: center;
+    padding: 0 1em;
+    color: #070c1f;
+}
+.head_desc h3 {
+    font-weight: 500;
+    font-size: 1.5em;
+    
+}
+.testimonial_card_body{
+    padding: 1.4em 0;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-size:0.8em;
+    letter-spacing: 1.2px;
+}
+
+.testimonial_card_footer{
+    color:#2b6b68;
+    
+}
+.testimonial_card_footer .MuiSvgIcon-root {
+    width: 0.7em;
+    font-size: 2em;
+    padding: 1px;
 }

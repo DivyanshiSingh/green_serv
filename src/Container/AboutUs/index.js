@@ -10,11 +10,50 @@ import ScrollAnimation from "react-animate-on-scroll";
 import ThumbsUp from '@material-ui/icons/ThumbUpSharp';
 import House from '@material-ui/icons/HouseOutlined';
 import Team from '@material-ui/icons/Group';
-
 import { Icon } from "@material-ui/core";
-function About() {
+import Carousel from "../../Components/Carousel";
+import { testimonialData } from "./constant";
+import NextArr from "../../Components/Projects/NextArr";
+import PrevArr from "../../Components/Projects/PrevArr";
+import StarIcon from '@material-ui/icons/Star';
+const renderRating = (data) => {
+  let rating= [];
+  for(let i = 1; i<= data; i++) {
+    rating.push(<StarIcon/>);
+  }
+  return rating;
+}
+const Card = ({description, name, location, img_url, rating}) => {
   return (
-    <div>
+    <div className="testimonial_card">
+      <div className="testimonial_card_head">
+        <img src={img_url} alt="customer"/>
+        <div className="head_desc">
+          <h3>{name}</h3>
+          <small>{location}</small>
+        </div>
+      </div>
+      <div className="testimonial_card_body">
+        {description}
+      </div>
+      <div className="testimonial_card_footer">
+        {renderRating(rating)}
+      </div>
+    </div>
+  )
+}
+function About() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    nextArrow: <NextArr/>,
+    prevArrow: <PrevArr/>
+  };
+  return (
+    <>
       <div className="about_heading wrapper">
         <div className="about_left">
           <h1>About Us</h1>
@@ -157,9 +196,22 @@ function About() {
           We decorate your living and embelish your relations.”
         </p>
       </div>
-      {/* bottom contact */}
-      <div className="extra_small"></div>
-    </div>
+      {/* Testimonial */}
+      
+      <div className="testimonial">
+        <div className="heading">
+          <hr />
+          <h1>Thanks for your sweet words</h1>
+        </div>
+        <Carousel settings={settings}>
+          {testimonialData.map((data) => (
+            <div>
+              <Card {...data}/>
+            </div>
+          ))}
+        </Carousel>
+      </div>
+    </>
   );
 }
 

@@ -115,12 +115,13 @@
 .paragraph__read-more{
   display: flex;
 }
-.paragraph__read-more p {
+.paragraph__read-more a {
   padding: 0 1.5em;
+  text-decoration: none;
   color: #2b6b68;
   cursor: pointer;
 }
-.paragraph__read-more p:after {
+.paragraph__read-more a:after {
   content: '';
   display:block;
   width: 100%;
@@ -128,7 +129,7 @@
   border-bottom: 2px solid #2b6b68;
   transition: 0.5s;
 }
-.paragraph__read-more p:hover:after{
+.paragraph__read-more a:hover:after{
   width: 0;
 }
 .arrow{

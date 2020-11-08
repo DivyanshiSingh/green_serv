@@ -5,6 +5,7 @@ import Contact from '../../images/contact.png';
 import InputComponent from "../InputComponent";
 import ScrollAnimation from "react-animate-on-scroll";
 import Projects from "../Projects";
+import Carousel from "../Carousel";
 function HomeTeam() {
   return (
     <div className="container">
@@ -40,7 +41,9 @@ function HomeTeam() {
 
       <Projects/>
 
-
+      {/* <div className="home_testimonial">
+        <Carousel/>
+      </div> */}
       <div className="home_contact">
         <div className="home_contact_left">
           <div className="heading">

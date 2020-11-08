@@ -1,10 +1,11 @@
 .projects{
-  padding: 60px 80px;
+  padding: 5em 80px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  /* background-color: #f0f0f0; */
 }
 .projects > div {
-  margin-right: 0.5em;
+  /* margin-right: 0.5em; */
 }
 .projects_left{
   display: flex;
@@ -14,3 +15,9 @@
   width: 50%;
 }
 
+.projects_right{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  
+}

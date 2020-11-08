@@ -46,7 +46,7 @@ function Home() {
           </div>
           <div className="paragraph__read-more">
             <ArrowRightAltIcon className="arrow"/>
-            <p>Read More</p>
+            <Link to="/about"> Read More </Link>
           </div>
           
         </div>
