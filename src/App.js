@@ -31,19 +31,6 @@ function App() {
     // console.log(data.data());
     // setUser(data.map(doc => doc.data()));
     console.log("herer");
-      db.collection("users").add({
-        first: "Ada",
-        last: "Lovelace",
-        email: "abc@gmail.com",
-    })
-    .then(function(docRef) {
-      console.log("success")
-        console.log("Document written with ID: ", docRef.id);
-    })
-    .catch(function(error) {
-      console.log("error")
-        console.error("Error adding document: ", error);
-    });
   }
 
 

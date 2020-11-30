@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./contact.css";
 import Fab from "@material-ui/core/Fab";
 import NavigationIcon from "@material-ui/icons/Add";
-
+import firebase from '../../Utils/firebase';
+import emailjs from 'emailjs-com';
+import { emailConfig } from "../../Utils/config";
 function Contact() {
   const [userName, setUserName] = useState("");
   const [city, setCity] = useState("");
@@ -12,6 +14,7 @@ function Contact() {
   const [propertySize, setPropertySize] = useState("");
   const [requirements, setRequirements] = useState("");
   const [message, setMessage] = useState("");
+  
 
   return (
     <>
@@ -218,7 +221,33 @@ function Contact() {
                 aria-label="send"
                 color="primary"
                 onClick={() => {
-                  console.log("here");
+                  const db=firebase.firestore();
+                  db.collection("users").add({
+                    userName,
+                    message,
+                    location,
+                    email,
+                    city,
+                    phone,
+                    propertySize,
+                    requirements,
+                  }).then((doc)=>{
+                    console.log(doc);
+                    emailjs.send(emailConfig.serviceId, emailConfig.templateId, {
+                      from_name: userName,
+                      to_name: "GreenServ",
+                      requirements,
+                      location,
+                      phone,
+                      message,
+                      email,
+                    }, emailConfig.userId).then((result) => {
+                      console.log(result.text);
+                    }, (err) => console.log(err))
+                  })
+                  .catch((err)=>{
+                    console.log(err);
+                  })
                 }}
               >
                 <NavigationIcon />
