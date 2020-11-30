@@ -26,7 +26,12 @@
     
     background-color: #2b6b68;
     padding: 4em 4em;
+    
 }
+.info p{
+    line-height: 30px;
+}
+
 .form{
    
     padding: 4em 4em;
@@ -36,7 +41,7 @@
 }
 .Contact_topic{
     color: white;
-    
+    padding-bottom: 40px;
     font-size: 40px;
     font-weight: 600;
 }
@@ -106,6 +111,7 @@
     box-sizing: border-box;
     background-color:rgb(243, 241, 241);
     border-bottom: 2px solid rgb(219, 218, 218);
+    outline:none;
 }
 .requirement{
     border:none;
@@ -115,6 +121,7 @@
     box-sizing: border-box;
     background-color:rgb(243, 241, 241);
     border-bottom: 2px solid rgb(219, 218, 218);
+    outline:none;
 
 }
 .floating{
