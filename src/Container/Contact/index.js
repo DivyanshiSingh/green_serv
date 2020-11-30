@@ -23,6 +23,7 @@ function Contact() {
         </div>
         <div className="chapter_img"></div>
       </div>
+      
 
       <div className="extra"></div>
       <div className="extra"></div>
