@@ -11,6 +11,7 @@
 }
 .main-wrapper{
   padding-top: 65px;
+  overflow: hidden;
 }
 main{
   width:100%;

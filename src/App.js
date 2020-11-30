@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import About from "./Container/AboutUs";
 import Services from "./Container/Services/index";
 import Portfolio from "./Container/Portfolio/index";
@@ -14,6 +14,7 @@ import Navbar from "./Components/Navbar";
 import Bottom from "./Components/Bottom";
 import Home from "./Container/Home";
 import Carousel from "./Components/Carousel";
+import firebase from "./Utils/firebase";
 const LoadingIcon = (
   <Loader
     className="loader"
@@ -24,7 +25,29 @@ const LoadingIcon = (
   />
 );
 function App() {
+  const [user, setUser] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const db = firebase.firestore();
+      const data = await db.collection("user").get();
+      // console.log(data.data());
+      // setUser(data.map(doc => doc.data()));
+    //   db.collection("user").add({
+    //     first: "Ada",
+    //     last: "Lovelace",
+    //     born: 1815
+    // })
+    // .then(function(docRef) {
+    //     console.log("Document written with ID: ", docRef.id);
+    // })
+    // .catch(function(error) {
+    //     console.error("Error adding document: ", error);
+    // });
+    }
+    fetchData();
+  },[]);
   const [loading, setLoading] = useState(false);
+  console.log(user);
   return (
     <main>
       <Navbar />
