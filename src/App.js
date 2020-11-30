@@ -7,7 +7,7 @@ import Contact from "./Container/Contact/index";
 import Error from "./Container/Error";
 import Loader from "react-loader-spinner";
 import { Route, Switch } from "react-router-dom";
-
+import 'firebase/firestore';
 import "./App.css";
 
 import Navbar from "./Components/Navbar";
@@ -25,25 +25,32 @@ const LoadingIcon = (
   />
 );
 function App() {
+  const fetchData = async () => {
+    const db = firebase.firestore();
+    // const data = await db.collection("users").get();
+    // console.log(data.data());
+    // setUser(data.map(doc => doc.data()));
+    console.log("herer");
+      db.collection("users").add({
+        first: "Ada",
+        last: "Lovelace",
+        email: "abc@gmail.com",
+    })
+    .then(function(docRef) {
+      console.log("success")
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+      console.log("error")
+        console.error("Error adding document: ", error);
+    });
+  }
+
+
   const [user, setUser] = useState([]);
+  // useEffect(() => {},[])
   useEffect(() => {
-    const fetchData = async () => {
-      const db = firebase.firestore();
-      const data = await db.collection("user").get();
-      // console.log(data.data());
-      // setUser(data.map(doc => doc.data()));
-    //   db.collection("user").add({
-    //     first: "Ada",
-    //     last: "Lovelace",
-    //     born: 1815
-    // })
-    // .then(function(docRef) {
-    //     console.log("Document written with ID: ", docRef.id);
-    // })
-    // .catch(function(error) {
-    //     console.error("Error adding document: ", error);
-    // });
-    }
+    
     fetchData();
   },[]);
   const [loading, setLoading] = useState(false);
