@@ -7,7 +7,9 @@ import emailjs from 'emailjs-com';
 import { emailConfig } from "../../Utils/config";
 import SendIcon from "@material-ui/icons/Send";
 import SnackBar from "@material-ui/core/SnackBar";
-import IconButton from "@material-ui/core/IconButton";
+import { checkEmpty, phoneValidator } from "../../Utils/validator";
+import { VALIDATION_ERROR, CONTACT_SUCCESS_MESSAGE } from "../../Components/Home_team/constant";
+
 function Contact() {
   // this.state = {snackbaropen: false, snackbarmsg:'Your information is saved. We will contact you shortly.'};
   const [userName, setUserName] = useState("");
@@ -19,6 +21,7 @@ function Contact() {
   const [requirements, setRequirements] = useState("");
   const [message, setMessage] = useState("");
   const [open, setOpen] = useState(false);
+  const [alert, setAlert]= useState('');
   const handleClick =()=>{
     setOpen(true);
   }
@@ -118,7 +121,7 @@ function Contact() {
                     className="form_control"
                     value={userName}
                     onChange={(event) => {
-                      console.log(event.target.value);
+                      
                       setUserName(event.target.value);
                     }}
                   />
@@ -145,7 +148,7 @@ function Contact() {
                 <div className="name_light">E-mail</div>
                 <div className="name_area">
                   <input
-                    type="text"
+                    type="email"
                     className="form_control"
                     value={email}
                     onChange={(event) => {
@@ -238,6 +241,7 @@ function Contact() {
                 aria-label="send"
                 
                 onClick={() => {
+                  if(checkEmpty(userName) && checkEmpty(city) && phoneValidator(phone)){
                   const db=firebase.firestore();
                   db.collection("users").add({
                     userName,
@@ -270,24 +274,29 @@ function Contact() {
                       setPhone('');
                     
                     }, (err) => console.log(err))
-                  })
+                  }).then(()=>{
+                    setAlert(CONTACT_SUCCESS_MESSAGE);
+                    setOpen(true)})
                   .catch((err)=>{
                     console.log(err);
                   })
-                }}
+                }
+                else{
+                  setAlert(VALIDATION_ERROR);
+                  setOpen(true);
+                }
+              }}
               >
               <SendIcon/>
               </Fab>
+              
               <SnackBar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
               open={open}
               autoHideDuration={3000}
               onClose={handleClose}
-              message='your information is saved! We will get back to you shortly'
-              action={
-                <React.Fragment>
-
-                </React.Fragment>
-              }/>
+              message={alert}
+              
+              /> 
             </div>
           </div>
         </div>

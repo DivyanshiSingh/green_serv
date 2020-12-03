@@ -13,10 +13,25 @@ import Person1 from "../../images/aditya.jpg";
 import Person2 from "../../images/golu.jpg";
 import Person3 from "../../images/divyanshi.jpg";
 import Person4 from "../../images/divyanshi.jpg";
+import SnackBar from "@material-ui/core/SnackBar";
+import { phoneValidator } from "../../Utils/validator";
+import { SUCCESS_MESSAGE, VALIDATION_ERROR } from "./constant";
+
 
 
 function HomeTeam() {
   const [phone,setPhone]= useState('');
+  const [open, setOpen] = useState(false);
+  const [alert, setAlert]= useState('');
+  const handleClick =()=>{
+    setOpen(true);
+  }
+  const handleClose= (event, reason) =>{
+    if(reason === ' clickaway'){
+      return
+    }
+    setOpen(false)
+  }
   return (
     <div className="container">
       <div className="team">
@@ -67,10 +82,13 @@ function HomeTeam() {
           </div>
           <div className="home_input">
             <InputComponent type="text" placeholder= "Your phone number" value={phone} 
-            onChange={(e)=>{setPhone(e.target.value);}}/>
+            onChange={(e)=>{
+              if(e.target.value.length<=10)
+              setPhone(e.target.value);}}/>
             <button className="btn" 
             
             onClick={()=>{
+              if(phoneValidator(phone)){
               const db=firebase.firestore();
               db.collection("users").add({
                 phone,
@@ -84,14 +102,29 @@ function HomeTeam() {
                 }, emailConfig.userId).then((result)=>{
                   console.log(result.text);
                   setPhone('');
-                }, (err)=>console.log(err))
+                  setAlert(SUCCESS_MESSAGE);
+                  setOpen(true);
+                }, 
+                
+                (err)=>console.log(err))
 
               })
               .catch((err)=>{
                 console.log(err);
               })
-            }}
+            }
+          else{
+            setAlert(VALIDATION_ERROR);
+            setOpen(true);
+          }}}
             >Callback</button>
+            <SnackBar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
+              open={open}
+              autoHideDuration={3000}
+              onClose={handleClose}
+              message={alert}
+              
+            /> 
           </div>
           
         </div>
