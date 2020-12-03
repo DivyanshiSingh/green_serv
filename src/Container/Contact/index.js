@@ -5,7 +5,11 @@ import NavigationIcon from "@material-ui/icons/Add";
 import firebase from '../../Utils/firebase';
 import emailjs from 'emailjs-com';
 import { emailConfig } from "../../Utils/config";
+import SendIcon from "@material-ui/icons/Send";
+import SnackBar from "@material-ui/core/SnackBar";
+import IconButton from "@material-ui/core/IconButton";
 function Contact() {
+  // this.state = {snackbaropen: false, snackbarmsg:'Your information is saved. We will contact you shortly.'};
   const [userName, setUserName] = useState("");
   const [city, setCity] = useState("");
   const [email, setEmail] = useState("");
@@ -14,6 +18,18 @@ function Contact() {
   const [propertySize, setPropertySize] = useState("");
   const [requirements, setRequirements] = useState("");
   const [message, setMessage] = useState("");
+  const [open, setOpen] = useState(false);
+  const handleClick =()=>{
+    setOpen(true);
+  }
+  const handleClose= (event, reason) =>{
+    if(reason === ' clickaway'){
+      return
+    }
+    setOpen(false)
+  }
+
+  
   
 
   return (
@@ -217,9 +233,10 @@ function Contact() {
             </div>
             <div className="floating">
               <Fab
+                className='floating_btn'
                 size="large"
                 aria-label="send"
-                color="primary"
+                
                 onClick={() => {
                   const db=firebase.firestore();
                   db.collection("users").add({
@@ -243,6 +260,15 @@ function Contact() {
                       email,
                     }, emailConfig.userId).then((result) => {
                       console.log(result.text);
+                      setUserName('');
+                      setCity('');
+                      setEmail('');
+                      setLocation('');
+                      setMessage('');
+                      setPropertySize('');
+                      setRequirements('');
+                      setPhone('');
+                    
                     }, (err) => console.log(err))
                   })
                   .catch((err)=>{
@@ -250,8 +276,18 @@ function Contact() {
                   })
                 }}
               >
-                <NavigationIcon />
+              <SendIcon/>
               </Fab>
+              <SnackBar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
+              open={open}
+              autoHideDuration={3000}
+              onClose={handleClose}
+              message='your information is saved! We will get back to you shortly'
+              action={
+                <React.Fragment>
+
+                </React.Fragment>
+              }/>
             </div>
           </div>
         </div>
@@ -259,5 +295,6 @@ function Contact() {
     </>
   );
 }
+
 
 export default Contact;

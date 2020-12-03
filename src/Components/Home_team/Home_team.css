@@ -54,10 +54,14 @@
       height: 200px;
       width:100%;
   }
+  .team_img1_pic{
+    height:200px;
+    width: 100%;
+  }
   .team_img1 .team_img2 .team_img3 .team_img4{
       height: 200px;
       width: 50%;
-      color: pink;
+     
   }
   
   .image_line2{
@@ -94,16 +98,19 @@
   justify-content: flex-start;
   align-items: center;
 }
-.home_input a {
+
+.home_input .btn {
   text-decoration: none;
   background: #2b6b68;
   color: #fff;
-  padding: 1em 2em;
+  padding: 1.3em 2em;
   margin: 0 0.5em;
   font-weight: 500;
   letter-spacing: 1px;
+  outline: none;
+  border:none;
 }
-.home_input a:hover{
+.home_input .btn:hover{
   background-color: #235754;
   transition: all 0.3s ease-in;
 }
@@ -118,4 +125,21 @@
 .home_testimonial{
   background-color: #2b6b68;
   padding: 100px;
+}
+/* .team_img1{
+  background-color: #070c1f;
+}
+.team_img2{
+  background-color: #898ea0;
+}
+.team_img3{
+  background-color: #b5c48b;
+}
+.team_img4{
+  background-color: #adb633;
+} */
+.img1{
+  height: 380px;
+  width: 100%;
+  border-radius: 5px;
 }

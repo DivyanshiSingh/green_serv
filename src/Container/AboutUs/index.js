@@ -3,7 +3,8 @@ import About_banner from "../../Components/About_banner/index";
 import "./about.css";
 import Bottom from "../../Components/Bottom";
 import Person4 from "../../images/divyanshi.jpg";
-import Person1 from "../../images/golu.jpg";
+import Person1 from "../../images/aditya.jpg";
+import Person2 from "../../images/golu.jpg";
 import Service1 from "../../images/service1.jpg";
 import Service2 from "../../images/service2.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -92,13 +93,13 @@ function About() {
         <div className="out">
           <div className="person1">
             <div className="test_border">
-              <img src={Person1} alt="Divyanshi Singh" className="about_img" />
+              <img src={Person1} alt="Aditya Bhatnaker" className="about_img" />
             </div>
             <br></br>
             <div className="person1_intro">
-              <p className="person_p">Chief Technical Officer</p>
+              <p className="person_p">Director (Sales and marketing)</p>
               <br></br>
-              <p className="person_name">Divyanshi Singh</p>
+              <p className="person_name">Aditya Bhatnaker</p>
               <br></br>
               <p className="person_introduction">
                 Every Home has its own story and so the designing also differs.
@@ -111,13 +112,13 @@ function About() {
           <div className="extra_out"></div>
           <div className="person2">
             <div className="test_border">
-              <img src={Person1} alt="Divyanshi Singh" className="about_img" />
+              <img src={Person2} alt="Archit Rathi" className="about_img" />
             </div>
             <br></br>
             <div className="person1_intro">
-              <p className="person_p">Chief Technical Officer</p>
+              <p className="person_p">Director (Designing and execution)</p>
               <br></br>
-              <p className="person_name">Divyanshi Singh</p>
+              <p className="person_name">Archit Rathi</p>
               <br></br>
               <p className="person_introduction">
                 Every Home has its own story and so the designing also differs.
@@ -134,9 +135,9 @@ function About() {
             </div>
             <br></br>
             <div className="person1_intro">
-              <p className="person_p">Chief Technical Officer</p>
+              <p className="person_p">Director (Execution and Planning)</p>
               <br></br>
-              <p className="person_name">Divyanshi Singh</p>
+              <p className="person_name">Kuldeep Bhatnaker</p>
               <br></br>
               <p className="person_introduction">
                 Every Home has its own story and so the designing also differs.

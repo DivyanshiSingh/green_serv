@@ -129,3 +129,7 @@
     top:30px; 
     left: +650px;
 }
+.floating_btn{
+    background-color: #2b6b68 !important;
+    color: white !important;
+}
