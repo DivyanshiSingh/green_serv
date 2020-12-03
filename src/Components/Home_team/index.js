@@ -13,7 +13,7 @@ import Person1 from "../../images/aditya.jpg";
 import Person2 from "../../images/golu.jpg";
 import Person3 from "../../images/divyanshi.jpg";
 import Person4 from "../../images/divyanshi.jpg";
-import SnackBar from "@material-ui/core/SnackBar";
+import Snackbar from "@material-ui/core/Snackbar";
 import { phoneValidator } from "../../Utils/validator";
 import { SUCCESS_MESSAGE, VALIDATION_ERROR } from "./constant";
 
@@ -118,7 +118,7 @@ function HomeTeam() {
             setOpen(true);
           }}}
             >Callback</button>
-            <SnackBar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
+            <Snackbar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
               open={open}
               autoHideDuration={3000}
               onClose={handleClose}

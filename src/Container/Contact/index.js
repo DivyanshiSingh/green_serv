@@ -6,7 +6,7 @@ import firebase from '../../Utils/firebase';
 import emailjs from 'emailjs-com';
 import { emailConfig } from "../../Utils/config";
 import SendIcon from "@material-ui/icons/Send";
-import SnackBar from "@material-ui/core/SnackBar";
+import Snackbar from "@material-ui/core/Snackbar";
 import { checkEmpty, phoneValidator } from "../../Utils/validator";
 import { VALIDATION_ERROR, CONTACT_SUCCESS_MESSAGE } from "../../Components/Home_team/constant";
 
@@ -290,7 +290,7 @@ function Contact() {
               <SendIcon/>
               </Fab>
               
-              <SnackBar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
+              <Snackbar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
               open={open}
               autoHideDuration={3000}
               onClose={handleClose}
