@@ -43,7 +43,7 @@ function Contact() {
 
           <p className="chapter2">We are delighted to hear from you</p>
         </div>
-        <div className="chapter_img"></div>
+        <div className="chapter_img3"></div>
       </div>
       
 
@@ -166,6 +166,7 @@ function Contact() {
                     className="form_control"
                     value={phone}
                     onChange={(event) => {
+                      if(event.target.value.length<=10)
                       setPhone(event.target.value);
                     }}
                   />

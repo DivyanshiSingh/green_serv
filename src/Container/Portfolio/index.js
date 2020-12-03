@@ -7,6 +7,7 @@ import Service4 from "../../images/service4.jpg";
 import NextArr from '../../Components/Projects/NextArr';
 import PrevArr from '../../Components/Projects/PrevArr';
 import Carousel from '../../Components/Carousel';
+
 function index() {
     const settings = {
         dots: true,
@@ -29,7 +30,7 @@ function index() {
                         Our work cases
                     </p>
                 </div>
-                <div className="chapter_img">
+                <div className="chapter_img2">
                     
 
                 </div>

@@ -99,7 +99,7 @@ function About() {
             <div className="person1_intro">
               <p className="person_p">Director (Sales and marketing)</p>
               <br></br>
-              <p className="person_name">Aditya Bhatnaker</p>
+              <p className="person_name">Aditya Bhatnagar</p>
               <br></br>
               <p className="person_introduction">
                 Every Home has its own story and so the designing also differs.
@@ -137,7 +137,7 @@ function About() {
             <div className="person1_intro">
               <p className="person_p">Director (Execution and Planning)</p>
               <br></br>
-              <p className="person_name">Kuldeep Bhatnaker</p>
+              <p className="person_name">Kuldeep Bhatnagar</p>
               <br></br>
               <p className="person_introduction">
                 Every Home has its own story and so the designing also differs.

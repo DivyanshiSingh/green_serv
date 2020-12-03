@@ -17,7 +17,7 @@ function Services() {
                         Please review our services
                     </p>
                 </div>
-                <div className="chapter_img">
+                <div className="chapter_img1">
 
                 </div>
             </div>
