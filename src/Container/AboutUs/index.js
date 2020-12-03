@@ -2,7 +2,7 @@ import React from "react";
 import About_banner from "../../Components/About_banner/index";
 import "./about.css";
 import Bottom from "../../Components/Bottom";
-import Person4 from "../../images/divyanshi.jpg";
+import Person4 from "../../images/div.png";
 import Person1 from "../../images/aditya.jpg";
 import Person2 from "../../images/golu.jpg";
 import Service1 from "../../images/service1.jpg";
@@ -131,7 +131,7 @@ function About() {
           <div className="extra_out"></div>
           <div className="person3">
             <div className="test_border">
-              <img src={Person4} alt="Divyanshi Singh" className="about_img" />
+              <img src={Person2} alt="Divyanshi Singh" className="about_img" />
             </div>
             <br></br>
             <div className="person1_intro">

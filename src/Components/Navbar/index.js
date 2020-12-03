@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div className="navbar"> 
             <div className="navbar__logo">
-                GreenServ Interiors
+                
             </div>
             <div className="navbar__nav">
                 <div className="navbar__elements">
