@@ -9,7 +9,8 @@ import Loader from "react-loader-spinner";
 import { Route, Switch } from "react-router-dom";
 import 'firebase/firestore';
 import "./App.css";
-
+import BubbleChartIcon from '@material-ui/icons/BubbleChart';
+import LocalPhone from '@material-ui/icons/LocalPhone';
 import Navbar from "./Components/Navbar";
 import Bottom from "./Components/Bottom";
 import Home from "./Container/Home";
@@ -45,7 +46,13 @@ function App() {
   return (
     <main>
       <Navbar />
-
+      <div className="action">
+        <BubbleChartIcon className="action__icon"/>
+      </div>
+      <div className="action_call">
+        <LocalPhone className="action__icon-call"/>
+        <p>9616457330</p>
+      </div>
       <div className="main-wrapper">
         <Switch>
           <Route path="/" component={Home} exact />

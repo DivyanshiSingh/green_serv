@@ -193,7 +193,7 @@
 
 .about_heading{
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 400px 1fr;
     padding-bottom: 8rem ;
     padding-top: 4rem;
 }
@@ -226,13 +226,14 @@
 }
 .image_container1{
     position: relative;
+    
 }
 .image_container1::after{
     content: '';
     position: absolute;
     background:#2b6b68;
     width: 100px;
-    bottom:-7px;
+    top:170px;
     height: 40%;
     /* width: 50%; */
     left: -11px;
@@ -241,7 +242,7 @@
 .image_container2{
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 50%;
 }
 .image_container2::after{
     content: '';
@@ -308,12 +309,13 @@
     -ms-box-shadow: 0 0 11px rgba(0,0,0,0.10);
     -o-box-shadow: 0 0 11px rgba(0,0,0,0.10);
     box-shadow: 0 0 11px rgba(0,0,0,0.10);
-    padding: 50px 40px;
+    padding: 30px 40px;
     margin: 0 10px;
 }
 .testimonial_card {
     display: flex;
     flex-direction: column;
+    height: 300px;
 }
 .testimonial_card_head {
     display: flex;
@@ -328,15 +330,17 @@
 }
 .head_desc h3 {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.2em;
     
 }
 .testimonial_card_body{
-    padding: 1.4em 0;
-    line-height: 1.5em;
+    padding: 1.2em 0;
+    line-height: 1.4em;
     font-weight: 400;
     font-size:0.8em;
+    height: 100%;
     letter-spacing: 1.2px;
+    text-align: justify;
 }
 
 .testimonial_card_footer{

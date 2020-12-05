@@ -60,10 +60,7 @@ function About() {
           <h1>About Us</h1>
           <h4>Our History</h4>
           <ScrollAnimation animateIn="animate__bounceInDown">
-            <p>Every Home has its own story and so the designing also differs.
-                Our experienced designing team takes down your exact requirement
-                and challenges in your existing setup. Basis that, we provide
-                you with the best suitable designs.</p>
+            <p>We believe that every customer has a right to know “what is inside”. At Greenserv, we follow a transparent customer centric approach and informs the customer about the raw material used, Quantities, Pricing factors and various other things related the project. This has made us the synonym of Quality and Trust in the market and have helped us in achieving the highest customer satisfaction in the vicinity so far.</p>
           </ScrollAnimation>
         </div>
         <div className="about_right">
