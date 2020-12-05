@@ -1,0 +1,90 @@
+.action {
+  width: 40px;
+  height: 40px;
+  z-index: 200;
+  background: #2b6b68;;
+  position: relative;
+  top: 290px;
+  right: 0;
+  transition: 0.2s;
+  -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+-moz-box-shadow:    -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+}
+.action_call {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  z-index: 200;
+  position: relative;
+  top: 300px;
+  right: 0;
+  -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow:    -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  transition: 0.2s;
+}
+.action_call p {
+  display: none;
+}
+.action_call svg {
+  margin: 7px 8px;
+  font-size: 1.5em;
+  color: #2b6b68;
+}
+/* .action:hover {
+  
+  width: 300px;
+  height : 300px;
+  transition: 0.5s;
+  z-index: 300;
+  
+} */
+.action_call:hover p {
+  display: block;
+  color: #2b6b68;
+  padding: 10px 5px;
+}
+/* .action:hover svg {
+  display: none;
+} */
+.action svg {
+  font-size: 2em;
+  margin:2px 2px;
+
+}
+.action__icon{
+  margin: 0 auto;
+  color: white;
+}
+
+.action_call:hover{
+  width: 150px;
+  height: 40px;
+  transition: 0.2s;
+}
+
+.sidebar{
+  width: 300px;
+  height: 100vh;
+  /* position: absolute; */
+  right: 0;
+  background: #2b6b68;
+  transition: ease-in 2s;
+  -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow:    -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+}
+
+.side_panel{
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 400;
+
+}
+

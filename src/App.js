@@ -7,15 +7,14 @@ import Contact from "./Container/Contact/index";
 import Error from "./Container/Error";
 import Loader from "react-loader-spinner";
 import { Route, Switch } from "react-router-dom";
-import 'firebase/firestore';
+import "firebase/firestore";
 import "./App.css";
-import BubbleChartIcon from '@material-ui/icons/BubbleChart';
-import LocalPhone from '@material-ui/icons/LocalPhone';
 import Navbar from "./Components/Navbar";
 import Bottom from "./Components/Bottom";
 import Home from "./Container/Home";
-import Carousel from "./Components/Carousel";
 import firebase from "./Utils/firebase";
+import Handles from "./Components/Handles";
+import Sidepanel from "./Components/Sidepanel";
 const LoadingIcon = (
   <Loader
     className="loader"
@@ -32,27 +31,19 @@ function App() {
     // console.log(data.data());
     // setUser(data.map(doc => doc.data()));
     console.log("herer");
-  }
-
+  };
 
   const [user, setUser] = useState([]);
   // useEffect(() => {},[])
   useEffect(() => {
-    
     fetchData();
-  },[]);
+  }, []);
   const [loading, setLoading] = useState(false);
-  console.log(user);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <main>
       <Navbar />
-      <div className="action">
-        <BubbleChartIcon className="action__icon"/>
-      </div>
-      <div className="action_call">
-        <LocalPhone className="action__icon-call"/>
-        <p>9616457330</p>
-      </div>
+      <Sidepanel/>
       <div className="main-wrapper">
         <Switch>
           <Route path="/" component={Home} exact />
@@ -66,6 +57,7 @@ function App() {
       </div>
 
       <Bottom />
+      <Handles />
     </main>
   );
 }
