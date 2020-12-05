@@ -1,0 +1,11 @@
+
+.icon2, .icon1{
+    width: max-content;
+    background-color: rgb(241, 241, 236);
+    box-shadow:  1px 1px 1px #c2c1c1;
+    border-radius: 5;
+}
+/* .icon2{
+    background-color: rgb(63,81,181);
+    color: white !important;
+} */

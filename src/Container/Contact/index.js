@@ -9,6 +9,7 @@ import SendIcon from "@material-ui/icons/Send";
 import Snackbar from "@material-ui/core/Snackbar";
 import { checkEmpty, phoneValidator } from "../../Utils/validator";
 import { VALIDATION_ERROR, CONTACT_SUCCESS_MESSAGE } from "../../Components/Home_team/constant";
+import { motion } from "framer-motion";
 
 function Contact() {
   // this.state = {snackbaropen: false, snackbarmsg:'Your information is saved. We will contact you shortly.'};
@@ -36,6 +37,11 @@ function Contact() {
   
 
   return (
+    <motion.div 
+    exit={{opacity:0}} 
+    animate={{opacity: 1}}
+    exit={{opacity:0}}
+     >
     <>
       <div className="first">
         <div className="chapter">
@@ -303,6 +309,7 @@ function Contact() {
         </div>
       </div>
     </>
+    </motion.div>
   );
 }
 

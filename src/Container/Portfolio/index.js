@@ -7,6 +7,7 @@ import Service4 from "../../images/service4.jpg";
 import NextArr from '../../Components/Projects/NextArr';
 import PrevArr from '../../Components/Projects/PrevArr';
 import Carousel from '../../Components/Carousel';
+import { motion } from "framer-motion";
 
 function index() {
     const settings = {
@@ -19,6 +20,11 @@ function index() {
         prevArrow: <PrevArr/>
       };
     return (
+      <motion.div 
+    exit={{opacity:0}} 
+    animate={{opacity: 1}}
+    exit={{opacity:0}}
+     >
         <div>
             <div className="first">
                 <div className="chapter">
@@ -52,7 +58,7 @@ function index() {
 
             <div className="describe">
                 <p className="description">
-                Since our humble beginning in 2015, We have significantly expanded our collection of exclusive lamps. Today we are proud to present you our best lighting design solutions. Today we are proud to present you our best.
+                Since our humble beginning in 2015, We have significantly expanded our collection of exclusive lamps. Today we are proud to present you our best lighting design solutions. Since our inception, we never looked back and delivered numerous projects successfully. It includes flats, villas and independent houses.
                 </p>
             </div>
             {/* carousel */}
@@ -83,6 +89,7 @@ function index() {
         </Carousel>
             </div>
         </div>
+        </motion.div>
     )
 }
 

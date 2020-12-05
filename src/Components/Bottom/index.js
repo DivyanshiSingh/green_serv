@@ -22,10 +22,10 @@ function Bottom() {
                     </p>
                 </div>
                 <div className="handles">
-                    <a href="#">
+                    <a href="https://www.instagram.com/p/CHUkVjEjk5e/?igshid=xucg687ifvhq">
                         <Insta className="insta" />
                     </a>
-                    <a gref="#">
+                    <a href="https://www.facebook.com/GreenservInteriors">
                         <Fb className="fb"/>
                     </a>
                 </div>

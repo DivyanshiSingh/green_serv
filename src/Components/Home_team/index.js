@@ -47,14 +47,14 @@ function HomeTeam() {
           <div className="image_outer">
             <div className="image_line1">
               <div className="team_img1">
-              <img src={Person1} alt="Aditya Bhatnaker" className="team_img1_pic" />
+              <img src={Person1} alt="Aditya Bhatnagar" className="team_img1_pic" />
               </div>{" "}
               <div className="team_img2"> 
-              <img src={Person2} alt="Divyanshi Singh" className="team_img1_pic" /></div>{" "}
+              <img src={Person2} alt="Archit Rathi" className="team_img1_pic" /></div>{" "}
             </div>
             <div className="image_line2">
               <div className="team_img3">
-              <img src={Person3} alt="Divyanshi Singh" className="team_img1_pic" /> </div>{" "}
+              <img src={Person3} alt="Kuldeep Bhatnagar" className="team_img1_pic" /> </div>{" "}
               <div className="team_img4"> 
               <img src={Person4} alt="Divyanshi Singh" className="team_img1_pic" /></div>{" "}
             </div>{" "}

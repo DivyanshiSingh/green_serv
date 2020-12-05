@@ -32,7 +32,7 @@ function Home() {
         <img src={HomeHistoryImage2} className="img2" alt="study_image"/>
         </ScrollAnimation>
         <div className="text">
-          <h1>History of Our Creation</h1>
+          <h1>About Us</h1>
           <div className="paragraph">
             <p>
               We believe that every customer has a right to know “what is

@@ -17,6 +17,7 @@ import { testimonialData } from "./constant";
 import NextArr from "../../Components/Projects/NextArr";
 import PrevArr from "../../Components/Projects/PrevArr";
 import StarIcon from '@material-ui/icons/Star';
+import { motion } from "framer-motion";
 const renderRating = (data) => {
   let rating= [];
   for(let i = 1; i<= data; i++) {
@@ -54,6 +55,11 @@ function About() {
     prevArrow: <PrevArr/>
   };
   return (
+    <motion.div 
+    exit={{opacity:0}} 
+    animate={{opacity: 1}}
+    exit={{opacity:0}}
+     >
     <>
       <div className="about_heading wrapper">
         <div className="about_left">
@@ -213,6 +219,7 @@ function About() {
         </Carousel>
       </div>
     </>
+    </motion.div>
   );
 }
 
