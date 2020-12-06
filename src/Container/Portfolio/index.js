@@ -19,16 +19,20 @@ function Portfolio() {
       animate="visible"
       exit="exit"
     >
-      <div className="portfolio">
+      <div className="portfolio"> 
+      {/* For left */}
         <div className="portfolio_left">
           <div className="port-grid">
 
           </div>
         </div>
+
+
+        {/* For right */}
         <div className="portfolio_right">
-          <div className="portfolio-image-frame"> 
+        <div className="portfolio-image-frame"> 
             {/* <img src="https://elanta.app/nazar/quarty-demo/dark/img/banners/banner3.jpg" alt="banner"/> */}
-            <video autoPlay loop className="qrt-video-background" poster="img/video/bg-video-placeholder.jpg" muted>
+            <video autoPlay loop muted>
                 <source src="https://elanta.app/nazar/quarty-demo/dark/img/video/bg-video.mp4" type="video/mp4"/>
             </video>
           </div>
@@ -45,6 +49,7 @@ function Portfolio() {
               <Link to="/contact">Get In Touch</Link>
             </div>
           </div>
+          
         </div>
       </div>
     </motion.div>

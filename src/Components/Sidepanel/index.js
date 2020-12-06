@@ -31,7 +31,10 @@ const Sidepanel = () => {
         </div>
       </div>
       <div className="sidebar">
-        < div className="sidebar1">
+        <div className="sidebar-content">
+
+        
+        <div className="sidebar1">
           <div className="sidebar1_img">
           <img src={Logo} alt="company logo" className="company_logo" />
           </div>
@@ -45,7 +48,7 @@ const Sidepanel = () => {
             <p className="sidebar2_heading_p">Related Works</p>
           </div>
         </div>
-        <div className="sidebar3">
+        <div className="sidebar-list">
           <div className="sidebar3_img">
           <img src={Sidebar3} alt="company logo" className="sidebar3_img1" />
           </div>
@@ -54,8 +57,8 @@ const Sidepanel = () => {
             {/* <p className="sidebar3_label_p">INTERIOR DESIGNING</p> */}
           </div>
         </div>
-        <div className="sidebar4">
-          <div className="sidebar4_img">
+        <div className="sidebar-list">
+          <div className="sidebar3_img">
           <img src={Sidebar4} alt="company logo" className="sidebar4_img1" />
           </div>
           <div className="sidebar4_label">
@@ -63,14 +66,33 @@ const Sidepanel = () => {
             {/* <p className="sidebar4_label_p">QUALITY WOODWORKS</p> */}
           </div>
         </div>
-        <div className="sidebar4">
-          <div className="sidebar4_img">
+        <div className="sidebar-list">
+          <div className="sidebar3_img">
           <img src={Sidebar5} alt="company logo" className="sidebar4_img1" />
           </div>
           <div className="sidebar4_label">
           <Link to="/services">ARCHITECTURE</Link>
             {/* <p className="sidebar4_label_p">ARCHITECTURE</p> */}
           </div>
+        </div>
+        <div className="sidebar-list">
+          <div className="sidebar3_img">
+          <img src={Sidebar3} alt="company logo" className="sidebar3_img1" />
+          </div>
+          <div className="sidebar4_label">
+          <Link to="/services">INTERIOR DESIGNING</Link>
+            {/* <p className="sidebar3_label_p">INTERIOR DESIGNING</p> */}
+          </div>
+        </div>
+        <div className="sidebar-list">
+          <div className="sidebar3_img">
+          <img src={Sidebar3} alt="company logo" className="sidebar3_img1" />
+          </div>
+          <div className="sidebar4_label">
+          <Link to="/services">INTERIOR DESIGNING</Link>
+            {/* <p className="sidebar3_label_p">INTERIOR DESIGNING</p> */}
+          </div>
+        </div>
         </div>
         <div className="sidebar_button">
         <Link to="/portfolio">VIEW ALL WORKS</Link>

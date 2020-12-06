@@ -16,20 +16,15 @@
     display: flex;
 }
 .portfolio_left{
-    width: 70%;
+    width: 70%; 
     background-color: white;
 }
 .portfolio_right{
     width: 30%;
-    /* background-color: teal; */
+    background-color: teal;
     height: 92vh;
     overflow: hidden;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
     position: relative;
-    overflow: hidden;
 }
 .portfolio_right .portfolio-image-frame img, video {
     
@@ -37,16 +32,11 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-    -webkit-transition-delay: 0.4s;
-    transition-delay: 0.4s;
+    
 
 }
 .portfolio-image-frame{
-    animation: zoom 20s linear infinite;
+    /* animation: zoom 10s linear infinite; */
     
     position: absolute;
     top:0;
