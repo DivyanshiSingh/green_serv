@@ -12,7 +12,7 @@ const Sidepanel = () => {
         </div>
         <div className="action_call">
           <LocalPhone className="action__icon-call" />
-          <p>9616457330</p>
+          <p>+91 8373989676</p>
         </div>
       </div>
       {sidebarOpen ? 

@@ -61,13 +61,13 @@ box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
 }
 
 .action_call:hover{
-  width: 150px;
+  width: 180px;
   height: 40px;
   transition: 0.2s;
 }
 
 .sidebar{
-  width: 300px;
+  width: 250px;
   height: 100vh;
   /* position: absolute; */
   right: 0;
