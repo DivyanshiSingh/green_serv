@@ -20,7 +20,11 @@ function Portfolio() {
       exit="exit"
     >
       <div className="portfolio">
-        <div className="portfolio_left"></div>
+        <div className="portfolio_left">
+          <div className="port-grid">
+
+          </div>
+        </div>
         <div className="portfolio_right">
           <div className="portfolio-image-frame"> 
             {/* <img src="https://elanta.app/nazar/quarty-demo/dark/img/banners/banner3.jpg" alt="banner"/> */}
@@ -29,6 +33,9 @@ function Portfolio() {
             </video>
           </div>
           <div className="port-overlay">
+            <div className="port-hint">
+              <span></span>
+            </div>
             <div className="port-desc">
               <h1>
                 Our Works

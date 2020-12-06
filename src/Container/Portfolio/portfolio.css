@@ -63,7 +63,7 @@
     background-color: rgba(20, 21, 24, 0.7);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .port-overlay .port-desc {
     opacity: 1;
@@ -101,6 +101,39 @@
     text-decoration: none;
     background-color: rgb(4, 99, 99);
 }
+.port-hint{
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 40px;
+    border-radius: 15px;
+    border: solid 2px teal;
+    opacity: 1;
+}
+.port-hint span::before{
+    content: 'Scroll Down';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    width: 100px;
+    text-align: right;
+    position: absolute;
+    bottom: -60px;
+    right: -38px;
+    color: #fff;
+    transform: rotate(90deg);
+}
+.port-hint span::after{
+    content: '';
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: teal;
+    position: absolute;
+    top: 12px;
+    left: 45%;
+    animation: mouse 1s ease-in-out infinite;
+}
 @keyframes zoom{
     0% {
         transform: scale(1);
@@ -110,5 +143,17 @@
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes mouse{
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(9px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
