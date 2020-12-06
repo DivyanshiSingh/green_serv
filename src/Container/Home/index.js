@@ -6,10 +6,17 @@ import HomeTeam from "../../Components/Home_team";
 import HomeHistoryImage1 from '../../images/home_history_img1.jpg';
 import HomeHistoryImage2 from '../../images/home_history_img2.jpg';
 import ScrollAnimation from "react-animate-on-scroll";
-
+import { motion } from "framer-motion";
+import { containerVariant } from "../../Utils/config";
 function Home() {
   return (
-    <>
+    <motion.div 
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="main-wrapper"
+    >
       <div className="home">
         <div className="home__tagline">
           <h1>iNNOVATE . iNNITIATE . iNTEGRATE</h1>
@@ -53,7 +60,7 @@ function Home() {
       </div>
       <div className="extra"></div>
       <HomeTeam />
-    </>
+    </motion.div>
   );
 }
 

@@ -1,10 +1,18 @@
 import React from "react";
 import "./services.css";
 import Bottom from "../../Components/Bottom";
+import { motion } from "framer-motion";
+import { containerVariant } from "../../Utils/config";
 
 function Services() {
   return (
-    <div>
+    <motion.div
+      className="main-wrapper"
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className="first">
         <div className="chapter">
           <h1 className="chapter1">Services</h1>
@@ -94,7 +102,7 @@ function Services() {
         </div>
         <div className="extra"></div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

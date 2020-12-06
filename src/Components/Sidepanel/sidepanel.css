@@ -6,7 +6,7 @@
   position: relative;
   top: 290px;
   right: 0;
-  transition: 0.2s;
+  /* transition: 0.2s; */
   -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
 -moz-box-shadow:    -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
 box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
@@ -58,6 +58,7 @@ box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
 .action__icon{
   margin: 0 auto;
   color: white;
+  /* transform: translateX(100px) */
 }
 
 .action_call:hover{
@@ -70,21 +71,37 @@ box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
   width: 250px;
   height: 100vh;
   /* position: absolute; */
-  right: 0;
+  transition: ease-in 0.3s;
   background: #2b6b68;
-  transition: ease-in 2s;
+  /* transition: ease-in 2s; */
   -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
   -moz-box-shadow:    -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
   box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
 }
-
+.sidebar__heading{
+  margin-top: 100px;
+  text-align: center;
+}
+.sidebar h3{
+  color: white;
+}
+.sidebar-open{
+  transform: translateX(-253px);
+  /* display: none; */
+  transition: ease-out 0.5s;
+}
 .side_panel{
   position: fixed;
-  right: 0;
+  right: -252px;
   top: 0;
   display: flex;
   flex-direction: row;
   z-index: 400;
+  transition: 0.5s;
 
 }
 
+.side_panel-btn{
+  /* transition: 3s; */
+  /* transform: translate(10px , 20px); */
+}

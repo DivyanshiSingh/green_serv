@@ -54,9 +54,9 @@ function HomeTeam() {
             </div>
             <div className="image_line2">
               <div className="team_img3">
-              <img src={Person3} alt="Divyanshi Singh" className="team_img1_pic" /> </div>{" "}
+              {/* <img src={Person3} alt="Divyanshi Singh" className="team_img1_pic" /> {" "} */}</div>
               <div className="team_img4"> 
-              <img src={Person4} alt="Divyanshi Singh" className="team_img1_pic" /></div>{" "}
+              {/* <img src={Person4} alt="Divyanshi Singh" className="team_img1_pic" />{" "} */}</div>
             </div>{" "}
           </div>{" "}
         </div>{" "}

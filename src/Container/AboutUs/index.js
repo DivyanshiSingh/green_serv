@@ -17,6 +17,8 @@ import { testimonialData } from "./constant";
 import NextArr from "../../Components/Projects/NextArr";
 import PrevArr from "../../Components/Projects/PrevArr";
 import StarIcon from '@material-ui/icons/Star';
+import { motion } from "framer-motion";
+import { containerVariant } from "../../Utils/config";
 const renderRating = (data) => {
   let rating= [];
   for(let i = 1; i<= data; i++) {
@@ -54,23 +56,29 @@ function About() {
     prevArrow: <PrevArr/>
   };
   return (
-    <>
+    <motion.div
+      className="main-wrapper"
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className="about_heading wrapper">
         <div className="about_left">
           <h1>About Us</h1>
           <h4>Our History</h4>
-          <ScrollAnimation animateIn="animate__bounceInDown">
+          <ScrollAnimation animateOnce animateIn="animate__bounceInDown">
             <p>We believe that every customer has a right to know “what is inside”. At Greenserv, we follow a transparent customer centric approach and informs the customer about the raw material used, Quantities, Pricing factors and various other things related the project. This has made us the synonym of Quality and Trust in the market and have helped us in achieving the highest customer satisfaction in the vicinity so far.</p>
           </ScrollAnimation>
         </div>
         <div className="about_right">
           <div className="image_container1">
-            <ScrollAnimation animateIn="animate__slideInLeft">
+            <ScrollAnimation animateOnce animateIn="animate__slideInLeft">
               <img src={Service1} alt="service"/>
             </ScrollAnimation>
           </div>
           <div className="image_container2">
-            <ScrollAnimation animateIn="animate__slideInRight">
+            <ScrollAnimation animateOnce animateIn="animate__slideInRight">
             <img src={Service2} alt="service"/>
             </ScrollAnimation>
           </div>
@@ -209,7 +217,7 @@ function About() {
           ))}
         </Carousel>
       </div>
-    </>
+    </motion.div>
   );
 }
 

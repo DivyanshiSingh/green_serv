@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import "./contact.css";
 import Fab from "@material-ui/core/Fab";
 import NavigationIcon from "@material-ui/icons/Add";
-import firebase from '../../Utils/firebase';
-import emailjs from 'emailjs-com';
-import { emailConfig } from "../../Utils/config";
+import firebase from "../../Utils/firebase";
+import emailjs from "emailjs-com";
+import { containerVariant, emailConfig } from "../../Utils/config";
 import SendIcon from "@material-ui/icons/Send";
 import SnackBar from "@material-ui/core/SnackBar";
 import { checkEmpty, phoneValidator } from "../../Utils/validator";
-import { VALIDATION_ERROR, CONTACT_SUCCESS_MESSAGE } from "../../Components/Home_team/constant";
+import {
+  VALIDATION_ERROR,
+  CONTACT_SUCCESS_MESSAGE,
+} from "../../Components/Home_team/constant";
+import { motion } from "framer-motion";
 
 function Contact() {
   // this.state = {snackbaropen: false, snackbarmsg:'Your information is saved. We will contact you shortly.'};
@@ -21,22 +25,25 @@ function Contact() {
   const [requirements, setRequirements] = useState("");
   const [message, setMessage] = useState("");
   const [open, setOpen] = useState(false);
-  const [alert, setAlert]= useState('');
-  const handleClick =()=>{
+  const [alert, setAlert] = useState("");
+  const handleClick = () => {
     setOpen(true);
-  }
-  const handleClose= (event, reason) =>{
-    if(reason === ' clickaway'){
-      return
+  };
+  const handleClose = (event, reason) => {
+    if (reason === " clickaway") {
+      return;
     }
-    setOpen(false)
-  }
-
-  
-  
+    setOpen(false);
+  };
 
   return (
-    <>
+    <motion.div
+      className="main-wrapper"
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className="first">
         <div className="chapter">
           <p className="chapter1">Contact</p>
@@ -45,12 +52,11 @@ function Contact() {
         </div>
         <div className="chapter_img"></div>
       </div>
-      
 
       <div className="extra"></div>
       <div className="extra"></div>
       <div className="extra"></div>
-      <div className="second"> 
+      <div className="second">
         <div className="heading">
           <hr />
           <h1> Any questions or suggestion? </h1>{" "}
@@ -121,7 +127,6 @@ function Contact() {
                     className="form_control"
                     value={userName}
                     onChange={(event) => {
-                      
                       setUserName(event.target.value);
                     }}
                   />
@@ -236,74 +241,88 @@ function Contact() {
             </div>
             <div className="floating">
               <Fab
-                className='floating_btn'
+                className="floating_btn"
                 size="large"
                 aria-label="send"
-                
                 onClick={() => {
-                  if(checkEmpty(userName) && checkEmpty(city) && phoneValidator(phone)){
-                  const db=firebase.firestore();
-                  db.collection("users").add({
-                    userName,
-                    message,
-                    location,
-                    email,
-                    city,
-                    phone,
-                    propertySize,
-                    requirements,
-                  }).then((doc)=>{
-                    console.log(doc);
-                    emailjs.send(emailConfig.serviceId, emailConfig.templateId, {
-                      from_name: userName,
-                      to_name: "GreenServ",
-                      requirements,
-                      location,
-                      phone,
-                      message,
-                      email,
-                    }, emailConfig.userId).then((result) => {
-                      console.log(result.text);
-                      setUserName('');
-                      setCity('');
-                      setEmail('');
-                      setLocation('');
-                      setMessage('');
-                      setPropertySize('');
-                      setRequirements('');
-                      setPhone('');
-                    
-                    }, (err) => console.log(err))
-                  }).then(()=>{
-                    setAlert(CONTACT_SUCCESS_MESSAGE);
-                    setOpen(true)})
-                  .catch((err)=>{
-                    console.log(err);
-                  })
-                }
-                else{
-                  setAlert(VALIDATION_ERROR);
-                  setOpen(true);
-                }
-              }}
+                  if (
+                    checkEmpty(userName) &&
+                    checkEmpty(city) &&
+                    phoneValidator(phone)
+                  ) {
+                    const db = firebase.firestore();
+                    db.collection("users")
+                      .add({
+                        userName,
+                        message,
+                        location,
+                        email,
+                        city,
+                        phone,
+                        propertySize,
+                        requirements,
+                      })
+                      .then((doc) => {
+                        console.log(doc);
+                        emailjs
+                          .send(
+                            emailConfig.serviceId,
+                            emailConfig.templateId,
+                            {
+                              from_name: userName,
+                              to_name: "GreenServ",
+                              requirements,
+                              location,
+                              phone,
+                              message,
+                              email,
+                            },
+                            emailConfig.userId
+                          )
+                          .then(
+                            (result) => {
+                              console.log(result.text);
+                              setUserName("");
+                              setCity("");
+                              setEmail("");
+                              setLocation("");
+                              setMessage("");
+                              setPropertySize("");
+                              setRequirements("");
+                              setPhone("");
+                            },
+                            (err) => console.log(err)
+                          );
+                      })
+                      .then(() => {
+                        setAlert(CONTACT_SUCCESS_MESSAGE);
+                        setOpen(true);
+                      })
+                      .catch((err) => {
+                        console.log(err);
+                      });
+                  } else {
+                    setAlert(VALIDATION_ERROR);
+                    setOpen(true);
+                  }
+                }}
               >
-              <SendIcon/>
+                <SendIcon />
               </Fab>
-              
-              <SnackBar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
-              open={open}
-              autoHideDuration={3000}
-              onClose={handleClose}
-              message={alert}
-              
-              /> 
+
+              <SnackBar
+                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+                open={open}
+                autoHideDuration={3000}
+                onClose={handleClose}
+                message={alert}
+              />
             </div>
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
-
 
 export default Contact;

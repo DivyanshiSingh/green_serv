@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState} from "react";
 import About from "./Container/AboutUs";
 import Services from "./Container/Services/index";
 import Portfolio from "./Container/Portfolio/index";
@@ -6,7 +6,7 @@ import Blog from "./Container/Blog";
 import Contact from "./Container/Contact/index";
 import Error from "./Container/Error";
 import Loader from "react-loader-spinner";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import "firebase/firestore";
 import "./App.css";
 import Navbar from "./Components/Navbar";
@@ -15,6 +15,7 @@ import Home from "./Container/Home";
 import firebase from "./Utils/firebase";
 import Handles from "./Components/Handles";
 import Sidepanel from "./Components/Sidepanel";
+import { AnimatePresence } from "framer-motion";
 const LoadingIcon = (
   <Loader
     className="loader"
@@ -25,6 +26,7 @@ const LoadingIcon = (
   />
 );
 function App() {
+  const location = useLocation();
   const fetchData = async () => {
     const db = firebase.firestore();
     // const data = await db.collection("users").get();
@@ -44,17 +46,31 @@ function App() {
     <main>
       <Navbar />
       <Sidepanel/>
-      <div className="main-wrapper">
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/about" component={About} />
-          <Route path="/services" component={Services} />
+      
+      
+        <AnimatePresence exitBeforeEnter initial={false}>
+        
+        <Switch location={location} key ={location.pathname} >
+        
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route exact path="/about">
+            <About/>
+          </Route>
+          <Route path="/services">
+            <Services/>
+          </Route>
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
           <Route component={Error} />
+          
         </Switch>
-      </div>
+        
+        </AnimatePresence>
+        
+      
 
       <Bottom />
       <Handles />
