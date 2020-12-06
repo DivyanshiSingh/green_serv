@@ -91,15 +91,15 @@
 }
 .side_panel {
   position: fixed;
-  right: -300px;
+  right: -302px;
   top: 0;
   display: flex;
   flex-direction: row;
-  z-index: 400;
+  z-index: 1000;
   transition: 0.5s;
 }
 .sidebar {
-  padding-top: 65px;
+  /* padding-top: 65px; */
   overflow: hidden;
 }
 .sidebar1 {
@@ -163,7 +163,7 @@
   bottom: 0;
   height: 40px;
   width: 300px;
-  background-color: #2b6b68;
+  background-color: teal;
   padding-top: 13px;
   text-align: center;
   color: white;
