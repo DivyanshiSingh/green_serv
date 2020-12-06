@@ -65,9 +65,10 @@
     justify-content: space-between;
 }
 .port-desc hr{
-    width: 80px;
+    width: 90px;
     margin: 0.4em 0;
     border:  2px solid teal;
+    /* animation: length 1s ease-in-out infinite; */
 }
 .port-desc h1{
     font-weight: 700;
@@ -145,5 +146,16 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+@keyframes length{
+    0% {
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
