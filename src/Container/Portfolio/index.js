@@ -9,16 +9,8 @@ import PrevArr from "../../Components/Projects/PrevArr";
 import Carousel from "../../Components/Carousel";
 import { motion } from "framer-motion";
 import { containerVariant } from "../../Utils/config";
+import { Link } from "react-router-dom";
 function Portfolio() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToScroll: 1,
-    slidesToShow: 2,
-    nextArrow: <NextArr />,
-    prevArrow: <PrevArr />,
-  };
   return (
     <motion.div
       className="main-wrapper"
@@ -27,60 +19,26 @@ function Portfolio() {
       animate="visible"
       exit="exit"
     >
-      <div className="first">
-        <div className="chapter">
-          <p className="chapter1">Portfolio</p>
-
-          <p className="chapter2">Our work cases</p>
+      <div className="portfolio">
+        <div className="portfolio_left"></div>
+        <div className="portfolio_right">
+          <div className="portfolio-image-frame"> 
+            {/* <img src="https://elanta.app/nazar/quarty-demo/dark/img/banners/banner3.jpg" alt="banner"/> */}
+            <video autoPlay loop className="qrt-video-background" poster="img/video/bg-video-placeholder.jpg" muted>
+                <source src="https://elanta.app/nazar/quarty-demo/dark/img/video/bg-video.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <div className="port-overlay">
+            <div className="port-desc">
+              <h1>
+                Our Works
+              </h1>
+              <hr/>
+              <p>Review Our Works</p>
+              <Link to="/contact">Get In Touch</Link>
+            </div>
+          </div>
         </div>
-        <div className="chapter_img"></div>
-      </div>
-
-      <div className="extra"></div>
-      <div className="extra"></div>
-      <div className="extra"></div>
-      <div className="second">
-        <div className="heading">
-          <hr />
-          <h1> See our best projects </h1>{" "}
-        </div>{" "}
-        <br></br>
-      </div>
-
-      {/* quote */}
-
-      <div className="describe">
-        <p className="description">
-          Since our humble beginning in 2015, We have significantly expanded our
-          collection of exclusive lamps. Today we are proud to present you our
-          best lighting design solutions. Today we are proud to present you our
-          best.
-        </p>
-      </div>
-      {/* carousel */}
-      <div className="projects_right">
-        <Carousel settings={settings}>
-          <div>
-            <div className="carousel_img">
-              <img src={Service1} alt="service1" />
-            </div>
-          </div>
-          <div>
-            <div className="carousel_img">
-              <img src={Service2} alt="service1" />
-            </div>
-          </div>
-          <div>
-            <div className="carousel_img">
-              <img src={Service3} alt="service1" />
-            </div>
-          </div>
-          <div>
-            <div className="carousel_img">
-              <img src={Service4} alt="service1" />
-            </div>
-          </div>
-        </Carousel>
       </div>
     </motion.div>
   );

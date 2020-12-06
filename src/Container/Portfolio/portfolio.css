@@ -11,3 +11,104 @@
     font-weight:500;
     font-size: 22px;
 }
+
+.portfolio{
+    display: flex;
+}
+.portfolio_left{
+    width: 70%;
+    background-color: white;
+}
+.portfolio_right{
+    width: 30%;
+    /* background-color: teal; */
+    height: 92vh;
+    overflow: hidden;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio_right .portfolio-image-frame img, video {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+
+}
+.portfolio-image-frame{
+    animation: zoom 20s linear infinite;
+    
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.port-overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: rgba(20, 21, 24, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.port-overlay .port-desc {
+    opacity: 1;
+    color: white;
+}
+.port-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.port-desc hr{
+    width: 80px;
+    margin: 0.4em 0;
+    border:  2px solid teal;
+}
+.port-desc h1{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.port-desc p {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+.port-desc a {
+    padding: 10px 20px;
+    color: white;
+    background-color: teal;
+    margin: 0.2em 0;
+    width: max-content;
+    font-size: 0.9em;
+    font-weight: 300;
+    text-decoration: none;
+}
+.port-desc a:hover{
+    text-decoration: none;
+    background-color: rgb(4, 99, 99);
+}
+@keyframes zoom{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

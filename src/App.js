@@ -42,6 +42,7 @@ function App() {
   }, []);
   const [loading, setLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  console.log(location)
   return (
     <main>
       <Navbar />
@@ -72,7 +73,8 @@ function App() {
         
       
 
-      <Bottom />
+      {location.pathname !== '/portfolio' ? <Bottom />: null}
+      
       <Handles />
     </main>
   );
