@@ -5,7 +5,7 @@ import './bottom.css';
 
 function Bottom() {
     return (
-        <div>
+        <div className="bottom_out">
             {/* upper box */}
         <div className="bottom">
             <div className="bottom1">
@@ -103,7 +103,8 @@ function Bottom() {
                 </div>
             </div>   
         </div>
-        <div className="hr_div"><hr className="hr_line"/></div>
+        {/* <div className="hr_div"><hr className="hr_line"/>
+        </div> */}
 
             {/* lower box */}
         {/* <div className="lower_box">

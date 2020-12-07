@@ -22,13 +22,14 @@
 .portfolio_right{
     width: 30%;
     /* background-color: teal; */
+    right:0;
     height: 92vh;
     overflow: hidden;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    position: relative;
+    position: fixed;
     overflow: hidden;
 }
 .portfolio_right .portfolio-image-frame img, video {

@@ -85,3 +85,13 @@
     padding-top: 80px;
 
 }
+.bottom_out{
+    position:relative;
+    bottom: 0;
+    width:100%;
+    z-index: -1;
+}
+.bottom{
+    position: fixed;
+    bottom: 0;
+}
