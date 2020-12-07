@@ -10,8 +10,8 @@ import Carousel from "../../Components/Carousel";
 import { motion } from "framer-motion";
 import { containerVariant } from "../../Utils/config";
 import { Link } from "react-router-dom";
-import GridImg1 from "../../images/portfolio1.jpg";
-import GridImg2 from "../../images/portfolio2.jpg";
+import GridImg1 from "../../images/service1.jpg";
+import GridImg2 from "../../images/service3.jpg";
 function Portfolio() {
   return (
     <motion.div
