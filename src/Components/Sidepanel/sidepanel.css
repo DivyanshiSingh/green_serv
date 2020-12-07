@@ -2,14 +2,14 @@
   width: 40px;
   height: 40px;
   z-index: 200;
-  background: #2b6b68;;
+  background: #2b6b68;
   position: relative;
   top: 290px;
   right: 0;
   /* transition: 0.2s; */
   -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
--moz-box-shadow:    -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
-box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
 }
 .action_call {
   width: 40px;
@@ -22,8 +22,8 @@ box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
   top: 300px;
   right: 0;
   -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
-  -moz-box-shadow:    -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
-  box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
   transition: 0.2s;
 }
 .action_call p {
@@ -52,22 +52,21 @@ box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
 } */
 .action svg {
   font-size: 2em;
-  margin:2px 2px;
-
+  margin: 2px 2px;
 }
-.action__icon{
+.action__icon {
   margin: 0 auto;
   color: white;
   /* transform: translateX(100px) */
 }
 
-.action_call:hover{
+.action_call:hover {
   width: 180px;
   height: 40px;
   transition: 0.2s;
 }
 
-.sidebar{
+.sidebar {
   width: 300px;
   height: 100vh;
   /* position: absolute; */
@@ -75,161 +74,144 @@ box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
   background: #fff;
   /* transition: ease-in 2s; */
   -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
-  -moz-box-shadow:    -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
-  box-shadow:         -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
 }
-.sidebar__heading{
+.sidebar__heading {
   margin-top: 100px;
   text-align: center;
 }
-.sidebar h3{
+.sidebar h3 {
   color: white;
 }
-.sidebar-open{
+.sidebar-open {
   transform: translateX(-300px);
   /* display: none; */
   transition: ease-out 0.5s;
 }
-.side_panel{
+.side_panel {
   position: fixed;
-  right: -300px;
+  right: -302px;
   top: 0;
   display: flex;
   flex-direction: row;
-  z-index: 400;
+  z-index: 1000;
   transition: 0.5s;
-
 }
-.sidebar{
-  padding-top: 65px;
+.sidebar {
+  /* padding-top: 65px; */
+  overflow: hidden;
 }
-.sidebar1{
+.sidebar1 {
   display: flex;
   flex-direction: row;
-  height: 100px;
-  width: 300px;
-  
-  
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2em 0;
 }
-.company_logo{
-  margin-top: 25px;
-  padding-left: 10px;
-  height: 50px;
-  width: 80px;
-}
-.sidebar1_name{
-  padding-left:5px;
-  margin-top: 45px;
-  
-}
-.sidebar1_name_p1{
-  color: #2b6b68;
-  font-weight: 600;
-  padding-left: 5px;
-  font-size: 20px;
-  padding-right: 10px;
-}
-.sidebar2{
-  
-  height: 50px;
-  width: 300px;
- 
-}
-.sidebar2_heading{
-  height: 50px;
-  width: 300px;
-  
-  
-}
-.sidebar2_heading_p{
-  color: rgb(76,74,70);
-  font-weight: 600;
-  font-size: 20px;
-  padding-left: 30px;
-}
-.sidebar3_img1{
-  height: 120px;
-  width: 300px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.sidebar3_label_p{
-  margin-top: 2px;
-  color: rgb(175, 175, 174);
-  font-weight: 500;
-  font-size: 13px;
-  padding-left: 30px;
-}
-.sidebar3_label_p:hover{
-  color:rgb(102, 102, 100);
-}
-.sidebar4{
-  margin-top: 30px;
-}
-
-.sidebar4_img1{
-  height: 120px;
-  width: 300px;
-  padding-left: 30px;
-  padding-right: 30px;
-  
-
-}
-/* .sidebar4_label_p{
-  margin-top: 2px;
-  color: rgb(175, 175, 174);
-  font-weight: 500;
-  font-size: 13px;
-  padding-left: 30px;
-}
-.sidebar4_label_p:hover{
-  color:rgb(102, 102, 100);
-} */
-.sidebar_button{
-  position:fixed;
-  bottom:0.1px;
+.company_logo {
+  /* padding-left: 10px; */
   height: 40px;
-  width:300px;
-  background-color: #2b6b68;
+  width: auto;
+}
+.sidebar1_name_p1 {
+  color: #070c1f;
+  font-weight: 400;
+
+  font-size: 1.1rem;
+}
+.sidebar2_heading {
+  width: 100%;
+  padding: 0.8rem 0;
+}
+.sidebar2_heading_p {
+  color: #070c1f;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.sidebar-list {
+  padding: 0.9rem 0;
+}
+.sidebar3_img1 {
+  height: 124px;
+  width: 100%;
+}
+.sidebar3_label_p {
+  margin-top: 2px;
+  color: rgb(175, 175, 174);
+  font-weight: 500;
+  font-size: 13px;
+}
+.sidebar3_label_p:hover {
+  color: rgb(102, 102, 100);
+}
+
+.sidebar4_img1 {
+  height: 124px;
+  width: 100%;
+}
+.sidebar-content {
+  height: calc(100% - 40px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 13px 29px;
+}
+.sidebar_button {
+  position: relative;
+  bottom: 0;
+  height: 40px;
+  width: 300px;
+  background-color: teal;
   padding-top: 13px;
   text-align: center;
   color: white;
   text-decoration: none;
-  display: inline-block;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-
 }
-.sidebar_button a{
+.sidebar_button a {
   text-decoration: none;
   color: white;
   letter-spacing: 1.5px;
   transition: ease-in 0.2s;
-  
 }
-.sidebar_button:hover a{
+.sidebar_button:hover a {
   color: #37b1ab;
   transition: ease-in 0.2s;
-  
 }
-.sidebar_button:hover{
+.sidebar_button:hover {
   background-color: rgb(48, 47, 47);
   color: #2b6b68;
   transition: ease-in 0.2s;
 }
-.sidebar4_label a{
+.sidebar4_label a {
   text-decoration: none;
   letter-spacing: 1.5px;
   transition: ease-in 0.2s;
   margin-top: 2px;
-  color: rgb(175, 175, 174);
-  font-weight: 500;
-  font-size: 13px;
-  padding-left: 30px;
-  
+  color: #a6a6a6;
+  font-weight: 400;
+  font-size: 11px;
 }
-.sidebar4_label a:hover{
-  color: rgb(102, 102, 100)
-  
+.sidebar4_label a:hover {
+  color: rgb(102, 102, 100);
+}
+.sidebar3_img{
+  position: relative;
+}
+.sidebar3_img:hover::after{
+  content: '';
+    opacity: 1;
+    background-color: rgba(192, 189, 189, 0.15);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    transition: opacity .2s ease-out;
 }

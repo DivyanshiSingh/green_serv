@@ -3,7 +3,9 @@ import "./services.css";
 import Bottom from "../../Components/Bottom";
 import { motion } from "framer-motion";
 import { containerVariant } from "../../Utils/config";
-
+import HouseDesign from '../../images/about-03.jpg';
+import { Link } from "react-router-dom";
+import Stepper from "../../Components/Stepper";
 function Services() {
   return (
     <motion.div
@@ -29,6 +31,44 @@ function Services() {
         </div>
       </div>
       {/* second */}
+
+      <div className="service_port">
+        <div className="service_port_wrapper">
+          <div className="service_port_row">
+            <div className="service_port-left">
+              <div className="service_port-content">
+                <span>Turn A Home Into Your Space</span>
+                <div className="headline">
+                  <h1>Let's talk interior design</h1>
+                </div>
+                <div className="headline-content">
+                  <p>Our mission is to help every home buyer to provide all the Interior related services under one roof and that is why we offer a range of services to help you achieve the results you’re after.</p>
+                </div>
+                <div className="headline-btn">
+                  <Link to="/portfolio">VIEW PROJECTS</Link>
+                </div>
+                
+              </div>
+            </div>
+            <div className="service_port-right">
+              <Link to="/portfolio">
+              <img src={HouseDesign} alt="design"/> 
+              
+              <div className="design-content">
+                <div className="service_port_img-content">
+                  <h3>View More of Our</h3>
+                  <h1>Projects</h1>
+                </div>
+              </div>
+              </Link>
+            </div>
+          </div>
+          <hr/>
+          <div className="service_stepper">
+            {/* <Stepper/> */}
+          </div>
+        </div>
+      </div>
       <div className="service_body">
         <div className="second">
           <div className="heading">
