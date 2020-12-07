@@ -1,0 +1,354 @@
+.team_intro_heading{
+    font-size: 50px;
+    margin-left: 250px;
+    color: black;
+    font-weight: 600;
+    
+}
+.wrapper{
+    padding: 20px 80px;
+}
+.team_intro1, .team_intro2, .team_intro3, .team_intro4{
+    display: flex;
+    height: 300px;
+    width:100%;
+    padding-left:250px;
+    padding-right:200px;
+    
+}
+.member1_img, .member2_img, .member3_img, .member4_img{
+    height: 300px;
+    width: 40%;
+    background-color:black;
+}
+.member1_intro, .member2_intro, .member3_intro, .member4_intro{
+    height: 300px;
+    width: 40%;
+    /* background-color: greenyellow; */
+}
+.extra_between{
+    height:300px;
+    width:10%;
+    background-color:white;
+}
+.member4_img{
+    background-image: url('../../images/divyanshi.jpg');
+}
+.member2_img{
+    background-image: url('../../images/golu.jpg');
+}
+.p1{
+    color: rgb(82, 81, 81);
+    font-weight: 600;
+}
+.name{
+    color: rgb(44, 43, 43);
+    font-size: 20px;
+    font-weight: 600;
+}
+.introduction{
+    color: rgb(82, 81, 81);
+    font-size:13px;
+}
+.banner2{
+    display: flex;
+    flex-direction: row;
+    background-color:#f2f3f3;   
+}
+.durability, .modern, .professional{
+    width: 33.33%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.banner2_1{
+    font-size:20px;
+    /* color:#2b6b68; */
+    color: #070c1f;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.1px;
+}
+.banner2_icon{
+    color: #2b6b68;
+    font-size: 5em !important;
+}
+.banner2_2{
+    font-size:15px;
+    color:#535353;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.1px;
+}
+.quote{
+    padding: 1em 0;
+}
+.p_quote{
+    text-align: center;
+    color:#070c1f;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+.extra_small{
+    height:50px;
+    width:100%;
+}
+.out{
+    display: flex;
+    height: 500px;
+    width:100%;
+    background-color: #727374;
+    justify-content: space-evenly;
+}
+.person1{
+    height:500px;
+    width:25%;
+    background-color: white;
+}
+.person2{
+    height:500px;
+    width:25%;
+    background-color:white;
+}
+.person3{
+    height:500px;
+    width:25%;
+    background-color:white;
+}
+.person4{
+    height:500px;
+    width:25%;
+    background-color: white;
+    position: relative;
+}
+
+.extra_out{
+    height:500px;
+    width:5%;
+    background-color: white;
+}
+.person1_img{
+    height: 250px;
+    width:100%;
+    background-image: url('../../images/golu.jpg');
+}
+.person2_img{
+    height: 250px;
+    width:100%;
+    background-image: url('../../images/golu.jpg');
+}
+.person3_img{
+    height: 250px;
+    width:100%;
+    background-image: url('../../images/golu.jpg');
+
+}
+.test_border{
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+.about_img{
+    height: 250px;
+    width:100%;
+    z-index: 100;
+    object-fit: cover;
+}
+.test_border::after{
+    content: '';
+    position: absolute;
+    background:#2b6b68;
+    width: 150px;
+    top:-13px;
+    height: 60%;
+    /* width: 50%; */
+    left: -13px;
+    z-index: -1;
+}
+.person4_img{
+    height: 250px;
+    width:100%;
+    background-image: url('../../images/divyanshi.jpg');
+
+}
+.person_p{
+    color: rgb(102, 101, 101);
+    font-weight: 600;
+    /* text-align: center; */
+}
+.person_name{
+    color: rgb(44, 43, 43);
+    font-size: 20px;
+    font-weight: 600;
+    /* text-align: center; */
+}
+.person_introduction{
+    color: rgb(110, 110, 110);
+    font-size:13px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    /* text-align: center; */
+}
+
+.about_heading{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    padding-bottom: 8rem ;
+    padding-top: 4rem;
+}
+.about_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about_left h1{
+    font-size: 4rem;
+    color: #070c1f;
+    font-weight: 600;
+}
+.about_left h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #6b6b6b;
+    letter-spacing: 1px;
+}
+.about_left p {
+    text-align: justify;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    color: #070c1f;
+}
+.about_right{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.image_container1{
+    position: relative;
+    
+}
+.image_container1::after{
+    content: '';
+    position: absolute;
+    background:#2b6b68;
+    width: 100px;
+    top:170px;
+    height: 40%;
+    /* width: 50%; */
+    left: -11px;
+    z-index: -1;
+}
+.image_container2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.image_container2::after{
+    content: '';
+    position: absolute;
+    background:#2b6b68;
+    width: 100px;
+    bottom:-7px;
+    height: 40%;
+    /* width: 50%; */
+    right: -11px;
+    z-index: -1;
+}
+.image_container1 img, .image_container2 img{
+    height: 300px;
+    
+}
+
+.testimonial{
+    width: 100%;
+    padding: 50px 80px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    /* background: #333; */
+}
+.testimonial .car_container{
+    margin: 0 auto;
+}
+.testimonial .slick-prev{
+    display: block;
+    position: absolute;
+    background-color: teal;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    color: white;
+    top:24em;
+    left: 0em;
+    background-color: rgb(218, 216, 216);
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+.testimonial .slick-next{
+    display: block;
+    position: absolute;
+    background-color: teal;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    color: white;
+    top:24em;
+    left: 3.5em;
+    background-color: rgb(218, 216, 216);
+    text-align: center;
+    
+    color: rgb(54, 54, 54);
+}
+.testimonial .slick-list {
+    padding: 1em 0;
+}
+.testimonial_card{
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0 0 11px rgba(0,0,0,0.10);
+    -ms-box-shadow: 0 0 11px rgba(0,0,0,0.10);
+    -o-box-shadow: 0 0 11px rgba(0,0,0,0.10);
+    box-shadow: 0 0 11px rgba(0,0,0,0.10);
+    padding: 30px 40px;
+    margin: 0 10px;
+}
+.testimonial_card {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+.testimonial_card_head {
+    display: flex;
+}
+.testimonial_card_head img{
+    border-radius: 50%;
+}
+.testimonial_card_head .head_desc{
+    align-self: center;
+    padding: 0 1em;
+    color: #070c1f;
+}
+.head_desc h3 {
+    font-weight: 500;
+    font-size: 1.2em;
+    
+}
+.testimonial_card_body{
+    padding: 1.2em 0;
+    line-height: 1.4em;
+    font-weight: 400;
+    font-size:0.8em;
+    height: 100%;
+    letter-spacing: 1.2px;
+    text-align: justify;
+}
+
+.testimonial_card_footer{
+    color:#2b6b68;
+    
+}
+.testimonial_card_footer .MuiSvgIcon-root {
+    width: 0.7em;
+    font-size: 2em;
+    padding: 1px;
+}

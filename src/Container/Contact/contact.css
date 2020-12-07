@@ -1,0 +1,139 @@
+.contact_sub_heading{
+    color: grey;
+    font-weight: 500;
+    font-size: 22px;
+}
+.sub_heading{
+    padding-left: 30px;
+    width:70%;
+
+}
+.card{
+    display: flex;
+    
+    width:90%;
+    
+    border-radius :7px;
+    background-color: rgb(243, 241, 241);
+    margin:0 auto;
+    align-content: center;  
+    margin-bottom: 4em; 
+}
+.info{
+    
+    border-radius :7px;
+    width:35%;
+    
+    background-color: #2b6b68;
+    padding: 4em 4em;
+    
+}
+.info p{
+    line-height: 30px;
+}
+
+.form{
+   
+    padding: 4em 4em;
+
+    width:65%;
+    
+}
+.Contact_topic{
+    color: white;
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.info_1{
+    display:flex;
+    width:100%;
+    padding: 0.5em 0;
+    
+
+}
+.info_info_1{
+    color:white;
+    
+    
+}
+.section_1{
+    display:flex;
+    
+
+}
+.light{
+    color: #7caaa7;
+    font-weight: 600;
+   
+}
+.form_topic{
+    background-color: #2b6b68;
+    height:40px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+.form_topic_p{
+    color: white;
+    font-size:20px;
+    font-weight:500;
+    padding-left:30px;
+    /* text-align: left; */
+}
+.form_body_1{
+    display:flex;
+    padding-top: 2em;
+    width:85%;
+    /* background-color:violet; */
+    
+    
+}
+.name_light{
+    font-size:15px;
+    font-weight:500;
+    color:rgb(155, 153, 153);
+}
+.form_body_1_name{
+    width:50%;
+}
+.form_body_1_city{
+    width:50%;
+}
+/* input[type=text] */
+.form_control{
+    border:none;
+    width: 250px;
+    height:30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color:rgb(243, 241, 241);
+    border-bottom: 2px solid rgb(219, 218, 218);
+    outline:none;
+}
+.form_control:focus{
+    border-bottom: 2px solid #2b6b68;
+    transition: ease-in 0.2s;
+}
+.requirement{
+    border:none;
+    width: 555px;
+    height:30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color:rgb(243, 241, 241);
+    border-bottom: 2px solid rgb(219, 218, 218);
+    outline:none;
+
+}
+.floating{
+    position: relative;
+    top:30px; 
+    left: +650px;
+}
+.floating_btn{
+    background-color: #2b6b68 !important;
+    color: white !important;
+}

@@ -1,0 +1,23 @@
+.projects{
+  padding: 5em 80px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #f0f0f0; */
+}
+.projects > div {
+  /* margin-right: 0.5em; */
+}
+.projects_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 350px;
+  width: 50%;
+}
+
+.projects_right{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  
+}

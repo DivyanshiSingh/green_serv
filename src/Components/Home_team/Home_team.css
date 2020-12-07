@@ -1,0 +1,145 @@
+.container{
+  padding: 30px 0;
+  overflow: hidden;
+}
+.team{
+  padding: 30px 80px;
+}
+.heading{
+    color: #070c1f;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+  }
+  .heading hr{
+    width: 5%;
+    margin-right: 1em;
+  }
+  .heading h1{
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-size: 2em;
+  }
+  .outer_team{
+      display: flex;
+      flex-direction: row;
+      height: 400px;
+      padding: 20px 0;
+  }
+  .number_outer{
+    height: 400px;
+    width: 50%;
+    background-color: #2b6b68;
+  }
+  .number{
+    font-size: 250px;
+    color:white;
+    text-align: center;
+  }
+  .number_tag{
+    color: white;
+    text-align: center;
+    padding-bottom: 0px; 
+  }
+  .image_outer{
+      background-color: aqua;
+      height: 400px;
+      width: 50%;
+  }
+  .image_line1{
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(68, 68, 68);
+      height: 200px;
+      width:100%;
+  }
+  .team_img1_pic{
+    height:200px;
+    width: 100%;
+  }
+  .team_img1 .team_img2 .team_img3 .team_img4{
+      height: 200px;
+      width: 50%;
+     
+  }
+  
+  .image_line2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(134, 182, 236);
+    height: 200px;
+    width:100%;
+}
+
+.process {
+  padding: 50px 80px;
+}
+
+.home_contact {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  background: rgb(240, 240, 240);
+  height: 400px;
+  margin-bottom: 1em;
+}
+.home_contact_left{
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home_input{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home_input .btn {
+  text-decoration: none;
+  background: #2b6b68;
+  color: #fff;
+  padding: 1.3em 2em;
+  margin: 0 0.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  outline: none;
+  border:none;
+}
+.home_input .btn:hover{
+  background-color: #235754;
+  transition: all 0.3s ease-in;
+}
+
+.home_contact_img{
+  position: absolute;
+  top:-10%;
+  left: 62%;
+  /* width: 400px; */
+}
+
+.home_testimonial{
+  background-color: #2b6b68;
+  padding: 100px;
+}
+/* .team_img1{
+  background-color: #070c1f;
+}
+.team_img2{
+  background-color: #898ea0;
+}
+.team_img3{
+  background-color: #b5c48b;
+}
+.team_img4{
+  background-color: #adb633;
+} */
+.img1{
+  height: 380px;
+  width: 100%;
+  border-radius: 5px;
+}

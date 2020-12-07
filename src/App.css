@@ -2,9 +2,21 @@
   text-align: center;
 }
  */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   
+}
+.main-wrapper{
+  padding-top: 65px;
+  overflow: hidden;
+}
+main{
+  width:100%;
+  overflow-y: auto;
+}
+.loader{
+  margin: 0 auto;
 }

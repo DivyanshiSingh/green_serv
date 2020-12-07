@@ -1,0 +1,39 @@
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    width:100%;
+    margin: 1em 0;
+    padding: 0 80px;
+    background-color: #2b6b68;
+}
+.tag{
+    width: 20%;
+}
+.awards, .customers,.years{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+.tag_p{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.awards_no, .customers_no, .years_no{
+    font-size:110px;
+    color: white;
+    font-weight: bold;
+    /* padding-left: 60px; */
+}
+.awards_line, .customers_line, .years_line{
+    color:  rgb(224, 224, 224);
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+.tag{
+    /* padding:20px; */
+}

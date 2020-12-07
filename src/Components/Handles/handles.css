@@ -1,0 +1,39 @@
+.icon2 {
+  width: 35px;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0px;
+  margin-top: 2px;
+  padding: 2px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+  transition: ease-in 0.2s;
+}
+.icon2 a {
+  display: none;
+}
+.sticky_handles {
+  position: fixed;
+  z-index: 1000;
+  top: 30%;
+  left: 0;
+  transition: 5s;
+}
+.icon1:hover {
+  width: 110px;
+  transition: ease-in 0.2s;
+}
+.icon2:hover a {
+  display: block;
+  text-decoration: none;
+  color: #2b6b68;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 10px 2px;
+}
+.icon2:hover {
+  width: 150px;
+  transition: ease-in 0.2s;
+}
