@@ -25,12 +25,18 @@
       display: flex;
       flex-direction: row;
       height: 400px;
-      padding: 20px 0;
+      /* padding: 20px 0; */
+      margin-right:35px;
+  }
+  .number-p{
+    padding-top:50px;
+    padding-right:40px;
+    padding-bottom: 50px;
   }
   .number_outer{
     height: 400px;
-    width: 50%;
-    background-color: #2b6b68;
+    width: 60%;
+    background-color: white;
   }
   .number{
     font-size: 250px;
@@ -43,35 +49,27 @@
     padding-bottom: 0px; 
   }
   .image_outer{
-      background-color: aqua;
+      
       height: 400px;
-      width: 50%;
+      width: 40%;
+      background: linear-gradient(180deg, rgba(228, 228, 228, 0.2) 70% , rgba(43, 107, 104, 0.87));
   }
-  .image_line1{
-      display: flex;
-      flex-direction: row;
-      background-color: rgb(68, 68, 68);
-      height: 200px;
-      width:100%;
+  .img_outer{
+    height: 400px;
+    width: 100%;
+    /* z-index: -4; */
+    position: relative;
+  z-index: 0;
+  /* object-fit: cover; */
   }
+  
   .team_img1_pic{
     height:200px;
     width: 100%;
   }
-  .team_img1 .team_img2 .team_img3 .team_img4{
-      height: 200px;
-      width: 50%;
-     
-  }
   
-  .image_line2{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(134, 182, 236);
-    height: 200px;
-    width:100%;
-}
-
+  
+  
 .process {
   padding: 50px 80px;
 }
@@ -126,18 +124,7 @@
   background-color: #2b6b68;
   padding: 100px;
 }
-/* .team_img1{
-  background-color: #070c1f;
-}
-.team_img2{
-  background-color: #898ea0;
-}
-.team_img3{
-  background-color: #b5c48b;
-}
-.team_img4{
-  background-color: #adb633;
-} */
+
 .img1{
   height: 380px;
   width: 100%;

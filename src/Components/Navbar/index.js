@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
-
+import Logo from '../../images/Group2.png';
 function Navbar() {
     return (
         <div className="navbar"> 
             <div className="navbar__logo">
-                GreenServ Interiors
+                <img src={Logo} alt="logo" style={{height: "30px", width:"auto"}} />
+                <p>GreenServ Interiors</p>
             </div>
             <div className="navbar__nav">
                 <div className="navbar__elements">

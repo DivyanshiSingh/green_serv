@@ -9,7 +9,7 @@
     background: #ffffff;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 80px;
     color:white;
     z-index: 1000;
     overflow: hidden;
@@ -21,7 +21,12 @@
     align-self: center;
     font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__logo p {
+    padding: 0 0.2em;
 }
 .navbar__nav {
     display: flex;

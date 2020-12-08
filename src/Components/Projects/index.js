@@ -32,13 +32,7 @@ const Projects = () => {
         <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
           <div className="projects_desc paragraph">
             <p>
-              A paragraph is a series of sentences that are organized and
-              coherent, and are all related to a single topic. Almost every
-              piece of writing you do that is longer than a few sentences should
-              be organized into paragraphs. This is because paragraphs show a
-              reader where the subdivisions of an essay begin and end, thus help
-              the reader see the organization of the essay and grasp its main
-              points.
+            Since our inception, we never looked back and delivered numerous projects successfully. It includes flats, villas and independent houses. Here is a glimpse of few projects that we have executed the projects.
             </p>
           </div>
         </ScrollAnimation>

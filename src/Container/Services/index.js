@@ -13,7 +13,7 @@ import {ReactComponent as Home} from '../../images/house.svg';
 function Services() {
   return (
     <motion.div
-      className="main-wrapper"
+      className="main-wrapper footer-space"
       variants={containerVariant}
       initial="hidden"
       animate="visible"
@@ -25,9 +25,7 @@ function Services() {
 
           <h3 className="chapter2">Please review our services</h3>
           <p>
-            Our mission is to help every home buyer to provide all the Interior
-            related services under one roof and that is why we offer a range of
-            services to help you achieve the results you’re after.
+          Today, every home is not Vastu compliant. Hence , we do the designing inspired by Vastu Shastra and helps our Clients in getting maximum benefits from each direction.
           </p>
         </div>
         <div className="chapter_holder">

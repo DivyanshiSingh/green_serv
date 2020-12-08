@@ -38,12 +38,13 @@ function Contact() {
 
   return (
     <motion.div
-      className="main-wrapper"
+      className="main-wrapper footer-space"
       variants={containerVariant}
       initial="hidden"
       animate="visible"
       exit="exit"
     >
+      
       <div className="first">
         <div className="chapter">
           <p className="chapter1">Contact</p>
@@ -56,6 +57,7 @@ function Contact() {
       <div className="extra"></div>
       <div className="extra"></div>
       <div className="extra"></div>
+      <div className="contact">
       <div className="second">
         <div className="heading">
           <hr />
@@ -320,6 +322,7 @@ function Contact() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </motion.div>
   );

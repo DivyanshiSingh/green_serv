@@ -44,6 +44,7 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   console.log(location)
   return (
+    <>
     <main>
       <Navbar />
       <Sidepanel/>
@@ -71,12 +72,17 @@ function App() {
         
         </AnimatePresence>
         
+        
       
 
-      {location.pathname !== '/portfolio' ? <Bottom />: null}
+      
       
       <Handles />
     </main>
+    <footer>
+    {location.pathname !== '/portfolio' ? <Bottom />: null}
+    </footer>
+    </>
   );
 }
 export default App;
