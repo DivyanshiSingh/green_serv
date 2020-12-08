@@ -10,8 +10,12 @@
   
 }
 .main-wrapper{
+  z-index: 3;
   padding-top: 65px;
-  overflow: hidden;
+  margin-bottom: 250px;
+  background-color: white;
+  
+  /* overflow: hidden; */
 }
 main{
   width:100%;

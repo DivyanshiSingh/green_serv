@@ -217,6 +217,7 @@ function About() {
           ))}
         </Carousel>
       </div>
+      
     </motion.div>
   );
 }
