@@ -14,10 +14,13 @@
 
 .portfolio{
     display: flex;
+    
 }
 .portfolio_left{
     width: 60%; 
     background-color: white;
+    height: 92vh;
+    overflow-y: scroll;
 }
 .portfolio_right{
     width: 40%;

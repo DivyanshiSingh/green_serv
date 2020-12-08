@@ -44,7 +44,7 @@ function HomeTeam() {
           <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
           <div className="projects_desc paragraph">
             <p className="number-p">
-            We believe that every customer has a right to know “what is inside”. At Greenserv, we follow a transparent customer centric approach and informs the customer about the raw material used, Quantities, Pricing factors and various other things related the project. This has made us the synonym of Quality and Trust in the market and have helped us in achieving the highest customer satisfaction in the vicinity so far.
+            Our cumulative experience is of around 39 years, however we started our journey in the year 2015 and never looked back. Since our inception, we have successfully completed more than 750+ projects and the numbers keep on increasing every month. At Greenserv, we promise you to not leave your place until we make it a dream come true for you. Let us solve the puzzle going on in your mind, call us for a free consultation.
             </p>
           </div>
         </ScrollAnimation>

@@ -223,6 +223,7 @@
     display: flex;
     position: relative;
     justify-content: center;
+    z-index: 3;
 }
 .image_container1{
     position: relative;
@@ -243,12 +244,13 @@
     position: absolute;
     top: 40%;
     left: 50%;
+    
 }
 .image_container2::after{
     content: '';
     position: absolute;
     background:#2b6b68;
-    width: 100px;
+    width: 110px;
     bottom:-7px;
     height: 40%;
     /* width: 50%; */
@@ -257,6 +259,7 @@
 }
 .image_container1 img, .image_container2 img{
     height: 300px;
+    z-index: 3;
     
 }
 

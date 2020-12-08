@@ -57,7 +57,7 @@ function About() {
   };
   return (
     <motion.div
-      className="main-wrapper"
+      className="main-wrapper footer-space"
       variants={containerVariant}
       initial="hidden"
       animate="visible"
@@ -136,7 +136,7 @@ function About() {
           <div className="extra_out"></div>
           <div className="person3">
             <div className="test_border">
-              <img src={Person4} alt="Divyanshi Singh" className="about_img" />
+              <img src="https://via.placeholder.com/150" alt="Kuldeep Bhatnaker" className="about_img" />
             </div>
             <br></br>
             <div className="person1_intro">

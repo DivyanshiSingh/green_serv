@@ -3,6 +3,9 @@
     font-weight: 500;
     font-size: 22px;
 }
+.contact{
+    padding: 0 80px;
+}
 .sub_heading{
     padding-left: 30px;
     width:70%;
@@ -129,9 +132,11 @@
 
 }
 .floating{
-    position: relative;
-    top:30px; 
-    left: +650px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4em;
+    padding-top: 2em;
+
 }
 .floating_btn{
     background-color: #2b6b68 !important;

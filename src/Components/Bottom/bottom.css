@@ -1,10 +1,11 @@
 .bottom{
     display:flex;
     width:100%;
-    padding: 30px 80px;
+    padding: 50px 80px;
     /* background: linear-gradient( rgba(228, 228, 228, 0.2) 70% , rgba(43, 107, 104, 0.87)); */
     background-color:#2b6b68;
-    height:500px;
+    
+    /* margin-top:100px; */
 }
 .bottom1{
     width: 40%;
@@ -88,14 +89,10 @@
 
 }
 .bottom_out{
-    position:relative;
+    position: fixed;
     bottom: 0;
     width:100%;
     z-index: -1;
-}
-.bottom{
-    position: fixed;
-    bottom: 0;
 }
 .about_heading wrapper{
     
