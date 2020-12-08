@@ -9,13 +9,12 @@ import Carousel from "../Carousel";
 import firebase from '../../Utils/firebase';
 import emailjs from 'emailjs-com';
 import { emailConfig } from "../../Utils/config";
-import Person1 from "../../images/aditya.jpg";
-import Person2 from "../../images/golu.jpg";
-import Person3 from "../../images/divyanshi.jpg";
-import Person4 from "../../images/divyanshi.jpg";
+import HomeHistoryImage1 from '../../images/outer.jpg';
 import SnackBar from "@material-ui/core/SnackBar";
 import { phoneValidator } from "../../Utils/validator";
 import { SUCCESS_MESSAGE, VALIDATION_ERROR } from "./constant";
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
+import { Link } from "react-router-dom";
 
 
 
@@ -37,43 +36,34 @@ function HomeTeam() {
       <div className="team">
         <div className="heading">
           <hr />
-          <h1> A Team United by Shared Values </h1>{" "}
+          <h1> Why we are Trustworthy? </h1>{" "}
         </div>{" "}
         <div className="outer_team">
+        
           <div className="number_outer">
-            <p className="number"> 4 </p>{" "}
-            <h1 className="number_tag"> Professional Designers in our team </h1>{" "}
+          <ScrollAnimation animateIn="animate__fadeInUp" animateOnce>
+          <div className="projects_desc paragraph">
+            <p className="number-p">
+            We believe that every customer has a right to know “what is inside”. At Greenserv, we follow a transparent customer centric approach and informs the customer about the raw material used, Quantities, Pricing factors and various other things related the project. This has made us the synonym of Quality and Trust in the market and have helped us in achieving the highest customer satisfaction in the vicinity so far.
+            </p>
+          </div>
+        </ScrollAnimation>
+        <div className="paragraph__read-more">
+          <ArrowRightAltIcon className="arrow" />
+          <Link to="/portfolio">View More</Link>
+        </div>
+            
           </div>{" "}
           <div className="image_outer">
-            <div className="image_line1">
-              <div className="team_img1">
-              <img src={Person1} alt="Aditya Bhatnaker" className="team_img1_pic" />
-              </div>{" "}
-              <div className="team_img2"> 
-              <img src={Person2} alt="Divyanshi Singh" className="team_img1_pic" /></div>{" "}
-            </div>
-            <div className="image_line2">
-              <div className="team_img3">
-              {/* <img src={Person3} alt="Divyanshi Singh" className="team_img1_pic" /> {" "} */}</div>
-              <div className="team_img4"> 
-              {/* <img src={Person4} alt="Divyanshi Singh" className="team_img1_pic" />{" "} */}</div>
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>
-      {/* <div className="process">
-        <div className="heading">
-          <hr />
-          <h1>Our process to make you dream true</h1>
+          <img src={HomeHistoryImage1} className="img_outer" alt="study_image"/>
         </div>
-        <Stepper/>
-      </div> */}
+      </div>
+      </div>
+      
 
       <Projects/>
 
-      {/* <div className="home_testimonial">
-        <Carousel/>
-      </div> */}
+      
       <div className="home_contact">
         <div className="home_contact_left">
           <div className="heading">

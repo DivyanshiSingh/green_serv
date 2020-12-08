@@ -42,43 +42,44 @@ function Bottom() {
                         <p className="address_1">
                         greater noida (west), 201009, India
                         </p>
-                     
-                    </div>
-                    <div className="newsletter_extra"></div>
-                    <div className="address">
                         <p className="address_1">
                         +91 8373989676
                         </p>
                         <p className="address_1">
                         +91 8287313108
                         </p>
-                     
-                    </div>
-                    <div className="newsletter_extra"></div>
-                    <div className="address">
                         <p className="address_1">
                         greenserv.info@gmail.com
                         </p>
-                        
                      
                     </div>
+                    
                 </div>
             </div>
             <div className="bottom3">
                 <div className="newsletter">
                     <p className="news">Services</p>
                     <div className="newsletter_extra"></div>
-                    <p className="bottom_3_items">Decor</p>
-                    <div className="email_extra"></div>
-                    <p className="bottom_3_items">Furniture</p>
-                    <div className="email_extra"></div>
-                    <p className="bottom_3_items">Lighting</p>
-                    <div className="email_extra"></div>
-                    <p className="bottom_3_items">Interior design</p>
-                    <div className="email_extra"></div>
-                    <p className="bottom_3_items">Architecture design</p>
-                    <div className="email_extra"></div>
-                    <p className="bottom_3_items">Commercial design</p>
+                    <div className="address">
+                        <p className="address_1">
+                        Furniture
+                        </p>
+                        <p className="address_1">
+                        Lighting
+                        </p>
+                        <p className="address_1">
+                        Interior Design
+                        </p>
+                        <p className="address_1">
+                        Architecture design
+                        </p>
+                        <p className="address_1">
+                        Commercial design
+                        </p>
+                     
+                    </div>
+
+                    
 
 
 
@@ -86,31 +87,32 @@ function Bottom() {
             </div>
             <div className="bottom4">
                 <div className="newsletter">
-                    <p className="news">Usefull Links</p>
+                    <p className="news">Useful Links</p>
                     <div className="newsletter_extra"></div>
-                    <p className="bottom_3_items">Home</p>
-                    
-                    <p className="bottom_3_items">About Us</p>
-                    
-                    <p className="bottom_3_items">Services</p>
-                    
-                    <p className="bottom_3_items">Portfolio</p>
-                    
-                    <p className="bottom_3_items">Contact Us</p>
-                    
-                    <p className="bottom_3_items">Blog</p>
+                    <div className="address">
+                        <p className="address_1">
+                        Home
+                        </p>
+                        <p className="address_1">
+                        About Us
+                        </p>
+                        <p className="address_1">
+                        Services
+                        </p>
+                        <p className="address_1">
+                        Portfolio
+                        </p>
+                        <p className="address_1">
+                        Contact Us
+                        </p>
+                     
+                    </div>
+                   
 
                 </div>
             </div>   
         </div>
-        {/* <div className="hr_div"><hr className="hr_line"/>
-        </div> */}
-
-            {/* lower box */}
-        {/* <div className="lower_box">
-            <p className="greenServ">GreenServ Interiors</p>
-
-        </div> */}
+        
         
         </div>
     )

@@ -70,6 +70,9 @@ function App() {
         </Switch>
         
         </AnimatePresence>
+        <div className="extra"></div>
+        <div className="extra"></div>
+        <div className="extra"></div>
         
       
 
