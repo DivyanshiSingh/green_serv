@@ -10,7 +10,7 @@ import firebase from '../../Utils/firebase';
 import emailjs from 'emailjs-com';
 import { emailConfig } from "../../Utils/config";
 import HomeHistoryImage1 from '../../images/outer.jpg';
-import SnackBar from "@material-ui/core/SnackBar";
+import Snackbar from "@material-ui/core/Snackbar";
 import { phoneValidator } from "../../Utils/validator";
 import { SUCCESS_MESSAGE, VALIDATION_ERROR } from "./constant";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
@@ -108,7 +108,7 @@ function HomeTeam() {
             setOpen(true);
           }}}
             >Callback</button>
-            <SnackBar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
+            <Snackbar anchorOrigin={{vertical:'bottom', horizontal:'center'}}
               open={open}
               autoHideDuration={3000}
               onClose={handleClose}
