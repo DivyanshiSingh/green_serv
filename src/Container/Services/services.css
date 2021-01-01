@@ -331,7 +331,7 @@
 }
 
 .service_desc-content .service_desc-item{
-    padding: 0 2em;
+    padding: 0 1.6em;
     flex-basis: 100%;
 }
 .service_desc-item svg{
@@ -350,9 +350,9 @@
     letter-spacing: 0.5px;
 }
 .service_desc_item-content p{
-    font-size: 0.7em;
+    font-size: 0.75em;
     line-height: 1.5em;
-    text-align: justify;
+    
 }
 .service_desc_item-content{
     position: relative;

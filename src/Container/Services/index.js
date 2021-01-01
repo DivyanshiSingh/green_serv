@@ -6,9 +6,10 @@ import { containerVariant } from "../../Utils/config";
 import HouseDesign from "../../images/about-03.jpg";
 import { Link } from "react-router-dom";
 import Stepper from "../../Components/Stepper";
-import  {ReactComponent as DesignSerice}  from "../../images/design.svg";
-import  {ReactComponent as Handy}  from "../../images/handy.svg";
-import {ReactComponent as Home} from '../../images/house.svg';
+import { ReactComponent as DesignSerice } from "../../images/design.svg";
+import { ReactComponent as Handy } from "../../images/handy.svg";
+import { ReactComponent as Home } from "../../images/house.svg";
+import { ReactComponent as Decorator } from "../../images/decorator.svg";
 
 function Services() {
   return (
@@ -25,7 +26,9 @@ function Services() {
 
           <h3 className="chapter2">Please review our services</h3>
           <p>
-          Today, every home is not Vastu compliant. Hence , we do the designing inspired by Vastu Shastra and helps our Clients in getting maximum benefits from each direction.
+            Today, every home is not Vastu compliant. Hence , we do the
+            designing inspired by Vastu Shastra and helps our Clients in getting
+            maximum benefits from each direction.
           </p>
         </div>
         <div className="chapter_holder">
@@ -87,132 +90,81 @@ function Services() {
           </div>
 
           <hr />
-          
         </div>
         <div className="service_desc-content">
-            <div className="service_desc-item">
-              <DesignSerice />
-              <div className="service_desc_item_head">
-                <h3>Design Services</h3>
-              </div>
-              <div className="service_desc_item-content">
-                <p>
-                  Every Home has its own story and so the designing also
-                  differs. Our experienced designing team takes down your exact
-                  requirement and challenges in your existing setup. Basis that,
-                  we provide you with the best suitable designs.
-                </p>
-              </div>
+          <div className="service_desc-item">
+            <DesignSerice />
+            <div className="service_desc_item_head">
+              <h3>Construction Services</h3>
             </div>
-            <div className="service_desc-item">
-              <Handy />
-              <div className="service_desc_item_head">
-                <h3>Quality Woodwork</h3>
-              </div>
-              <div className="service_desc_item-content">
-                <p>
-                  If we talk about today’s market condition, we can see that how
-                  people are getting fooled by local carpenters on the name of
-                  Interior Designing. Being novice, they easily come into their
-                  trap and ended up loosing their money for very low quality
-                  works. We at Greenserv, assures our customer about the raw
-                  material used in the whole process and best quality. Our
-                  continuous efforts towards the technological enhancement
-                  enables us to achieve the elegant designs.
-                </p>
-              </div>
-            </div>
-            <div className="service_desc-item">
-              <Home />
-              <div className="service_desc_item_head">
-                <h3>Home Improvement</h3>
-              </div>
-              <div className="service_desc_item-content">
-                <p>
-                  We will not leave until we make your Dream Home and that is
-                  why we provide complete interior solutions under one roof.
-                  Designer False Ceilings Express Painting Wallpapers Civil
-                  Works
-                </p>
-              </div>
+            <div className="service_desc_item-content">
+              <p>
+                It would not be wrong if say that the construction is in our
+                blood. We have been into construction industry from past 30
+                years and have delivered numerous projects like residential
+                buildings, Temples and Ashrams, Permanent and temporary
+                structures of Factories, Hospitals. We have a dedicated team of
+                Architects, Civil Engineers, Finishing engineers which make us a
+                one stop solution for all your construction related
+                requirements.
+              </p>
             </div>
           </div>
+          <div className="service_desc-item">
+            <Handy />
+            <div className="service_desc_item_head">
+              <h3>High Quality Woodwork</h3>
+            </div>
+            <div className="service_desc_item-content">
+              <p>
+                If we talk about today’s market condition, we can see that how
+                people are getting fooled by local carpenters on the name of
+                Interior Designing. Being novice, they easily come into their
+                trap and ended up losing their money for very low quality works.
+                We at Greenserv, assures our customer about the raw material
+                used in the whole process and best quality. Our continuous
+                efforts towards the technological enhancement enable us to
+                achieve the elegant designs be it Wardrobes, Modular Kitchen,
+                study table, Crockery unit, Led Console etc.
+              </p>
+            </div>
+          </div>
+          <div className="service_desc-item">
+            <Home />
+            <div className="service_desc_item_head">
+              <h3>Interior Design</h3>
+            </div>
+            <div className="service_desc_item-content">
+              <p>
+                Most of the Interior design companies work with the freelancers
+                or outsource their designing task. But we believe that the
+                design is a very first stage of any furniture item and should be
+                taken care of like an infant. If we outsource it to the other
+                person who does not have feelings attached to it, he would not
+                be able to make it in a proper way.
+              </p>
+            </div>
+          </div>
+          <div className="service_desc-item">
+            <Decorator />
+            <div className="service_desc_item_head">
+              <h3>Interior Decorator</h3>
+            </div>
+            <div className="service_desc_item-content">
+              <p>
+                Interiors decoration is not just putting decorative items in the
+                house, it is all about aesthetics. We first fetch out the
+                customer taste and then put all our efforts to make their raw
+                place a “jhakkas one”. Be it false ceiling, wallpapers, paint
+                services, complete decoration, we have a separate in-house
+                division for all the interior requirements.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* End of service descriptiom */}
-      {/* <div className="service_body">
-        <div className="second">
-          <div className="heading">
-            <hr />
-            <h1> We are ready to offer you following services </h1>{" "}
-          </div>{" "}
-          <br></br>
-          <br></br>
-        </div>
-
-        
-
-        <div className="service1">
-          <div className="service_img1"></div>
-          <div className="service_para">
-            <p className="service_para_1">Interior design</p>
-            <p className="service_para_2">
-              If we talk about today’s market condition, we can see that how
-              people are getting fooled by local carpenters on the name of
-              Interior Designing. Being novice, they easily come into their trap
-              and ended up loosing their money for very low quality works. We at
-              Greenserv, assures our customer about the raw material used in the
-              whole process and best quality.
-            </p>
-          </div>
-        </div>
-        <div className="extra_small"></div>
-        <div className="service1">
-          <div className="service_img2"></div>
-          <div className="service_para">
-            <p className="service_para_1">Architectural development</p>
-            <p className="service_para_2">
-              If we talk about today’s market condition, we can see that how
-              people are getting fooled by local carpenters on the name of
-              Interior Designing. Being novice, they easily come into their trap
-              and ended up loosing their money for very low quality works. We at
-              Greenserv, assures our customer about the raw material used in the
-              whole process and best quality.
-            </p>
-          </div>
-        </div>
-        <div className="extra_small"></div>
-        <div className="service1">
-          <div className="service_img3"></div>
-          <div className="service_para">
-            <p className="service_para_1">Kitchen interiors</p>
-            <p className="service_para_2">
-              If we talk about today’s market condition, we can see that how
-              people are getting fooled by local carpenters on the name of
-              Interior Designing. Being novice, they easily come into their trap
-              and ended up loosing their money for very low quality works. We at
-              Greenserv, assures our customer about the raw material used in the
-              whole process and best quality.
-            </p>
-          </div>
-        </div>
-        <div className="extra_small"></div>
-        <div className="service1">
-          <div className="service_img4"></div>
-          <div className="service_para">
-            <p className="service_para_1">Furniture</p>
-            <p className="service_para_2">
-              If we talk about today’s market condition, we can see that how
-              people are getting fooled by local carpenters on the name of
-              Interior Designing. Being novice, they easily come into their trap
-              and ended up loosing their money for very low quality works. We at
-              Greenserv, assures our customer about the raw material used in the
-              whole process and best quality.
-            </p>
-          </div>
-        </div>
-        <div className="extra"></div>
-      </div> */}
+      
     </motion.div>
   );
 }
