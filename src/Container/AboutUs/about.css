@@ -174,7 +174,8 @@
 }
 .person_p{
     color: rgb(102, 101, 101);
-    font-weight: 600;
+    font-weight: 500;
+    font-size:0.8em;
     /* text-align: center; */
 }
 .person_name{
@@ -354,4 +355,10 @@
     width: 0.7em;
     font-size: 2em;
     padding: 1px;
+}
+.person_footer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
 }

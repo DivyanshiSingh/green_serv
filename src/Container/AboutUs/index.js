@@ -107,11 +107,14 @@ function About() {
             <br></br>
             <div className="person1_intro">
               <p className="person_p">Director (Sales and marketing)</p>
-              <br></br>
+              
               <p className="person_name">Aditya Bhatnaker</p>
-              <br></br>
-              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
-        <a className="anchorr" href="https://www.linkedin.com/in/aditya-bhatnagar-54376a36/">Aditya Bhatnager</a>
+              
+              <div className="person_footer">
+              
+        <a className="anchorr" href="https://www.linkedin.com/in/aditya-bhatnagar-54376a36/"><LinkedInIcon  style={{"fontSize": 25, "color": "#1666C2"}}/></a>
+              </div>
+              
             </div>
           </div>
           <div className="extra_out"></div>
@@ -122,11 +125,13 @@ function About() {
             <br></br>
             <div className="person1_intro">
               <p className="person_p">Director (Designing and execution)</p>
-              <br></br>
+              
               <p className="person_name">Archit Rathi</p>
-              <br></br>
-              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
-        <a href="https://www.linkedin.com/in/archit-rathi-5a9a9a125/">Archit Rathi</a>
+              
+              <div className="person_footer">
+              
+        <a href="https://www.linkedin.com/in/archit-rathi-5a9a9a125/"><LinkedInIcon  style={{"fontSize": 25, "color": "#1666C2"}}/></a>
+        </div>
             </div>
           </div>
           <div className="extra_out"></div>
@@ -137,11 +142,13 @@ function About() {
             <br></br>
             <div className="person1_intro">
               <p className="person_p">Director (Execution and Planning)</p>
-              <br></br>
+              
               <p className="person_name">Kuldeep Bhatnager</p>
-              <br></br>
-              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
-        <a href="">Kuldeep Bhatnager</a>
+             
+              <div className="person_footer">
+              
+        <a href="#"><LinkedInIcon  style={{"fontSize": 25, "color": "#1666C2"}}/></a>
+        </div>
             </div>
           </div>
           <div className="extra_out"></div>
@@ -152,11 +159,13 @@ function About() {
             <br></br>
             <div className="person1_intro">
               <p className="person_p">Senior Designer</p>
-              <br></br>
+              
               <p className="person_name">Rishabh Kankaria</p>
-              <br></br>
-              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
-        <a href="">Rishabh Kankaria</a>
+              
+              <div className="person_footer">
+              
+        <a href="#"><LinkedInIcon  style={{"fontSize": 25, "color": "#1666C2"}}/></a>
+        </div>
             </div>
           </div>
           <div className="extra_out"></div>
@@ -168,11 +177,14 @@ function About() {
             <br></br>
             <div className="person1_intro">
               <p className="person_p">Chief Technical Officer</p>
-              <br></br>
+              
               <p className="person_name">Divyanshi Singh</p>
-              <br></br>
-              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
-        <a href="https://www.linkedin.com/in/divyanshi-singh-81a77a18b/">Divyanshi Singh</a>
+              
+              <div className="person_footer">
+              
+        <a href="https://www.linkedin.com/in/divyanshi-singh-81a77a18b/"><LinkedInIcon  style={{"fontSize": 25, "color": "#1666C2"}}/></a>
+        </div>
+        
             </div>
           </div>
         </div>
