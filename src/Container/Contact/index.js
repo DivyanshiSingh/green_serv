@@ -45,13 +45,33 @@ function Contact() {
       exit="exit"
     >
       
-      <div className="first">
+      {/* <div className="first">
         <div className="chapter">
           <p className="chapter1">Contact</p>
 
           <p className="chapter2">We are delighted to hear from you</p>
+          <p>
+            Today, every home is not Vastu compliant. Hence , we do the
+            designing inspired by Vastu Shastra and helps our Clients in getting
+            maximum benefits from each direction.
+          </p>
         </div>
-        <div className="chapter_img"></div>
+        <div className="chapter_img">
+
+        </div>
+      </div> */}
+      <div className="first">
+        <div className="chapter">
+          <h1 className="chapter1">Contact</h1>
+
+          <h3 className="chapter2">We are delighted to hear from you</h3>
+          <p>
+          We, at GreenServ Interiors, are committed to provide you with all the assistance you need in making your dream home a reality. For any querries or making your beautiful home come true, ping us. We are patiently waiting for you.
+          </p>
+        </div>
+        <div className="chapter_holder">
+          <div className="chapter_img2"></div>
+        </div>
       </div>
 
       <div className="extra"></div>
