@@ -25,7 +25,7 @@ function Bottom() {
                     <a href="#">
                         <Insta className="insta" />
                     </a>
-                    <a gref="#">
+                    <a href="#">
                         <Fb className="fb"/>
                     </a>
                 </div>
@@ -43,10 +43,10 @@ function Bottom() {
                         greater noida (west), 201009, India
                         </p>
                         <p className="address_1">
-                        +91 8373989676
+                        Sales Queries +91 8373989676
                         </p>
                         <p className="address_1">
-                        +91 8287313108
+                        Execution Queries +91 8287313108
                         </p>
                         <p className="address_1">
                         greenserv.info@gmail.com

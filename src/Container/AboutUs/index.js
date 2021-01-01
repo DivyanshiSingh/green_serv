@@ -2,9 +2,12 @@ import React from "react";
 import About_banner from "../../Components/About_banner/index";
 import "./about.css";
 import Bottom from "../../Components/Bottom";
-import Person4 from "../../images/divyanshi.jpg";
+import Person5 from "../../images/divyanshi.jpg";
 import Person1 from "../../images/aditya.jpg";
 import Person2 from "../../images/golu.jpg";
+import Person4 from "../../images/rishabh.jpg";
+import Person3 from "../../images/golu.jpg";
+
 import Service1 from "../../images/service1.jpg";
 import Service2 from "../../images/service2.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -19,6 +22,7 @@ import PrevArr from "../../Components/Projects/PrevArr";
 import StarIcon from '@material-ui/icons/Star';
 import { motion } from "framer-motion";
 import { containerVariant } from "../../Utils/config";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const renderRating = (data) => {
   let rating= [];
   for(let i = 1; i<= data; i++) {
@@ -106,12 +110,8 @@ function About() {
               <br></br>
               <p className="person_name">Aditya Bhatnaker</p>
               <br></br>
-              <p className="person_introduction">
-                Every Home has its own story and so the designing also differs.
-                Our experienced designing team takes down your exact requirement
-                and challenges in your existing setup. Basis that, we provide
-                you with the best suitable designs.
-              </p>
+              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
+        <a className="anchorr" href="https://www.linkedin.com/in/aditya-bhatnagar-54376a36/">Aditya Bhatnager</a>
             </div>
           </div>
           <div className="extra_out"></div>
@@ -125,37 +125,44 @@ function About() {
               <br></br>
               <p className="person_name">Archit Rathi</p>
               <br></br>
-              <p className="person_introduction">
-                Every Home has its own story and so the designing also differs.
-                Our experienced designing team takes down your exact requirement
-                and challenges in your existing setup. Basis that, we provide
-                you with the best suitable designs.
-              </p>
+              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
+        <a href="https://www.linkedin.com/in/archit-rathi-5a9a9a125/">Archit Rathi</a>
             </div>
           </div>
           <div className="extra_out"></div>
           <div className="person3">
             <div className="test_border">
-              <img src="https://via.placeholder.com/150" alt="Kuldeep Bhatnaker" className="about_img" />
+              <img src={Person3} alt="Kuldeep Bhatnaker" className="about_img" />
             </div>
             <br></br>
             <div className="person1_intro">
               <p className="person_p">Director (Execution and Planning)</p>
               <br></br>
-              <p className="person_name">Kuldeep Bhatnaker</p>
+              <p className="person_name">Kuldeep Bhatnager</p>
               <br></br>
-              <p className="person_introduction">
-                Every Home has its own story and so the designing also differs.
-                Our experienced designing team takes down your exact requirement
-                and challenges in your existing setup. Basis that, we provide
-                you with the best suitable designs.
-              </p>
+              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
+        <a href="">Kuldeep Bhatnager</a>
+            </div>
+          </div>
+          <div className="extra_out"></div>
+          <div className="person3">
+            <div className="test_border">
+              <img src={Person4} alt="Kuldeep Bhatnaker" className="about_img" />
+            </div>
+            <br></br>
+            <div className="person1_intro">
+              <p className="person_p">Senior Designer</p>
+              <br></br>
+              <p className="person_name">Rishabh Kankaria</p>
+              <br></br>
+              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
+        <a href="">Rishabh Kankaria</a>
             </div>
           </div>
           <div className="extra_out"></div>
           <div className="person4">
             <div className="test_border">
-              <img src={Person4} alt="Divyanshi Singh" className="about_img" />
+              <img src={Person5} alt="Divyanshi Singh" className="about_img" />
             </div>
 
             <br></br>
@@ -164,12 +171,8 @@ function About() {
               <br></br>
               <p className="person_name">Divyanshi Singh</p>
               <br></br>
-              <p className="person_introduction">
-                Every Home has its own story and so the designing also differs.
-                Our experienced designing team takes down your exact requirement
-                and challenges in your existing setup. Basis that, we provide
-                you with the best suitable designs.
-              </p>
+              <LinkedInIcon  style={{"fontSize": 35, "color": "#1666C2"}}/>
+        <a href="https://www.linkedin.com/in/divyanshi-singh-81a77a18b/">Divyanshi Singh</a>
             </div>
           </div>
         </div>

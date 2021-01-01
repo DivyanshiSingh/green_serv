@@ -1,3 +1,6 @@
+.chapter2{
+    color: #2b6b68 !important;
+}
 .contact_sub_heading{
     color: grey;
     font-weight: 500;
@@ -141,4 +144,15 @@
 .floating_btn{
     background-color: #2b6b68 !important;
     color: white !important;
+}
+a{
+    text-decoration: none;
+    color:rgb(92, 91, 91);
+    font-weight: 500;
+    /* font-size:20; */
+    
+    
+}
+.anchorr a :hover{
+    color: black;
 }

@@ -4,10 +4,10 @@ import "./styles.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import Carousel from "../Carousel";
 import { Link } from "react-router-dom";
-import Service1 from "../../images/service1.jpg";
-import Service2 from "../../images/service2.jpg";
-import Service3 from "../../images/service3.jpg";
-import Service4 from "../../images/service4.jpg";
+import Service1 from "../../images/gridImg2.jpg";
+import Service2 from "../../images/gridImg25.jpg";
+import Service3 from "../../images/gridImg6.jpg";
+import Service4 from "../../images/gridImg7.jpg";
 import NextArr from "./NextArr";
 import PrevArr from "./PrevArr";
 
