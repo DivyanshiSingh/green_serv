@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import BubbleChartIcon from "@material-ui/icons/BubbleChart";
 import LocalPhone from "@material-ui/icons/LocalPhone";
 import Logo from "../../images/Group2.png";
-import Sidebar3 from "../../images/service1.jpg";
-import Sidebar4 from "../../images/service4.jpg";
-import Sidebar5 from "../../images/service3.jpg";
+import Sidebar3 from "../../images/gridImg2.jpg";
+import Sidebar4 from "../../images/gridImg5.jpg";
+import Sidebar5 from "../../images/gridImg7.jpg";
+import Sidebar7 from "../../images/gridImg8.jpg";
+import Sidebar8 from "../../images/gridImg12.jpg";
 import { Link } from "react-router-dom";
 import './sidepanel.css';
 import { motion } from "framer-motion";
@@ -50,7 +52,7 @@ const Sidepanel = () => {
         </div>
         <div className="sidebar-list">
           <div className="sidebar3_img">
-          <img src={Sidebar3} alt="company logo" className="sidebar3_img1" />
+          <img src={Sidebar5} alt="company logo" className="sidebar3_img1" />
           </div>
           <div className="sidebar4_label">
           <Link to="/services">INTERIOR DESIGNING</Link>
@@ -68,7 +70,7 @@ const Sidepanel = () => {
         </div>
         <div className="sidebar-list">
           <div className="sidebar3_img">
-          <img src={Sidebar5} alt="company logo" className="sidebar4_img1" />
+          <img src={Sidebar3} alt="company logo" className="sidebar4_img1" />
           </div>
           <div className="sidebar4_label">
           <Link to="/services">ARCHITECTURE</Link>
@@ -77,7 +79,7 @@ const Sidepanel = () => {
         </div>
         <div className="sidebar-list">
           <div className="sidebar3_img">
-          <img src={Sidebar3} alt="company logo" className="sidebar3_img1" />
+          <img src={Sidebar7} alt="company logo" className="sidebar3_img1" />
           </div>
           <div className="sidebar4_label">
           <Link to="/services">INTERIOR DESIGNING</Link>
@@ -86,7 +88,7 @@ const Sidepanel = () => {
         </div>
         <div className="sidebar-list">
           <div className="sidebar3_img">
-          <img src={Sidebar3} alt="company logo" className="sidebar3_img1" />
+          <img src={Sidebar8} alt="company logo" className="sidebar3_img1" />
           </div>
           <div className="sidebar4_label">
           <Link to="/services">INTERIOR DESIGNING</Link>

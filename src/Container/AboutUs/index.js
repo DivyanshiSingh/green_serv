@@ -7,6 +7,7 @@ import Person1 from "../../images/aditya.jpg";
 import Person2 from "../../images/golu.jpg";
 import Person4 from "../../images/rishabh.jpg";
 import Person3 from "../../images/golu.jpg";
+import Panel from "../../images/image_outer.jpg";
 
 import Service1 from "../../images/service1.jpg";
 import Service2 from "../../images/service2.jpg";
@@ -89,6 +90,50 @@ function About() {
         </div>
       </div>
       <About_banner />
+      {/* Shared Values */}
+
+      <div className="wrapper">
+      <div className="heading">
+          <hr />
+          <h1> Our Shared Values </h1>{" "}
+        </div>{" "}
+      <div className="wrapper2">
+      <div className="content">
+      <p className="bold">
+        Hassle Free services- 
+        </p>
+        
+        <p className="non_bold">
+        Whenever we think about the home buyers, we feel that they are afflicted from every aspect. So, we have thought of a company where the customer does not feel insecure. We at Greenserv, guarantees you for a hassle free entry in your Dream home.
+        </p>
+        <br></br>
+        <p className="bold">
+        Customer is the King- 
+        </p>
+        <p className="non_bold">
+        “Forget about your competitors, just focus on the Customer”- Jack Ma.
+We work in the same direction and always show us our flexible attitude be it any kind of situation.
+
+        </p>
+        <br></br>
+        <p className="bold">
+        Excellence gives Success- 
+        </p>
+        <p className="non_bold">
+        There is no life without learning because it helps you to get success. We would like to learn at every stage and in our every project to bring out the excellence. Our vision is just to become a synonym of Quality and excellence in the industry.
+
+        </p>
+
+      </div>
+        
+      
+      <div className="image_wrapper">
+      <img src={Panel} alt="panel image"/>
+
+      </div>
+      </div>
+      </div>
+
       {/* INTRO */}
       {/* heading */}
       <div className="wrapper">
@@ -108,7 +153,7 @@ function About() {
             <div className="person1_intro">
               <p className="person_p">Director (Sales and marketing)</p>
               
-              <p className="person_name">Aditya Bhatnaker</p>
+              <p className="person_name">Aditya Bhatnager</p>
               
               <div className="person_footer">
               

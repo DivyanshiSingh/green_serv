@@ -362,3 +362,30 @@
     align-items: center;
     /* justify-content: space-around; */
 }
+.wrapper2{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height:500px;
+    width:100%;
+}
+.content{
+    width:70%;
+    height:400px;
+    /* padding-right: 10px; */
+}
+.bold{
+    color:#2b6b68;
+    font-size: 20px;
+    font-weight: 500;
+}
+.non_bold{
+    color: rgb(65, 63, 63);
+  letter-spacing: 1.3px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.image_wrapper{
+    padding-left:40px;
+    /* padding-bottom: 50px; */
+}
