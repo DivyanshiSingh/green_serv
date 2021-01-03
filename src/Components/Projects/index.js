@@ -20,7 +20,16 @@ const Projects = () => {
     slidesToScroll: 1,
     slidesToShow: 2,
     nextArrow: <NextArr/>,
-    prevArrow: <PrevArr/>
+    prevArrow: <PrevArr/>,
+    responsive: [
+      {
+        breakpoint:  480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll:1,
+        }
+      }
+    ]
   };
   return (
     <section className="projects">
