@@ -168,4 +168,28 @@
     padding: 1.2em 0;
     text-align: left !important;
   }
+  .home_contact{
+    padding: 40px 40px;
+    display: block;;
+    height: max-content;
+  }
+  .home_contact_left{
+    width: 100%;
+    display: block;
+    height: 100%;;
+  }
+  .home_contact_left .heading h1{
+    font-size: 1.3rem;
+  }
+  .home_contact .home_contact_img {
+    display: none;
+  }
+  .home_contact .home_contact_left .home_input{
+    padding: 30px 0 0 0;
+    display: block;
+  }
+  .home_input .btn {
+    margin: 1em 0;
+  }
+  
 }

@@ -9,3 +9,10 @@
   font-weight: 500;
   
 }
+
+@media screen and (max-width:426px) {
+  .serve-input input{
+    width: 100% ;
+    padding: 1em 1.4em ;
+  }
+}
