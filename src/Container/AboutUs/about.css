@@ -389,3 +389,129 @@
     padding-left:40px;
     /* padding-bottom: 50px; */
 }
+
+@media screen and (max-width:426px) {
+    .wrapper{
+        padding: 20px 40px;
+    }
+    .about_right{
+        display: none;
+    }
+    .about_heading{
+        display: block;
+    }
+    .about_left h1{
+        font-size: 2rem;
+    }
+    .about_left h4{
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    .about_left p{
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px 40px;
+    }
+    .banner .tag{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tag p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .awards,.customers,.years{
+        width: 100%;
+        border: none;
+        padding: 15px 0
+    }
+    .awards .awards_no, .customers_no, .years_no{
+        font-size: 4rem;
+    }
+    .awards .awards_line, .years_line, .customers_line {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .wrapper2{
+        height: 100%;
+    }
+    .wrapper2 .content{
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+    }
+    .content .bold{
+        font-size: 1rem;
+    }
+    .content .non_bold{
+        font-size: 0.7rem;
+    }
+    .wrapper2 .image_wrapper{
+        display: none;
+    }
+    .wrapper .heading h1 {
+        font-size: 1.5rem;
+    }
+    .test_border::after{
+        display: none;
+    }
+    .out {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: none;
+    }
+    .out .extra_out{
+        display: none;
+    }
+    .person1, .person2, .person3, .person4{
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+    }
+    .person_p{
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    .person_name{
+        font-size: 1.5rem;
+    }
+    .banner2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .durability, .modern, .professional{
+        padding: 10px 0;
+        width: 100%;
+    }
+    .testimonial{
+        padding: 20px 40px;
+    }
+    .testimonial_card_body {
+        line-height: 1.2em;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .testimonial_card_head .head_desc{
+        padding: 0 0.6em;
+    }
+    .head_desc h3 {
+        font-size: 0.8rem;
+    }
+    .head_desc small{
+        font-size: 0.6rem;
+    }
+    .testimonial_card{
+        padding: 20px 12px;
+        height: 100%;
+    }
+}

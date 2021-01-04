@@ -58,7 +58,17 @@ function About() {
     slidesToScroll: 1,
     slidesToShow: 3,
     nextArrow: <NextArr/>,
-    prevArrow: <PrevArr/>
+    prevArrow: <PrevArr/>,
+    responsive: [
+      {
+        breakpoint:  480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll:1,
+          dots: true,
+        }
+      }
+    ]
   };
   return (
     <motion.div
@@ -149,7 +159,7 @@ We work in the same direction and always show us our flexible attitude be it any
             <div className="test_border">
               <img src={Person1} alt="Aditya Bhatnaker" className="about_img" />
             </div>
-            <br></br>
+            
             <div className="person1_intro">
               <p className="person_p">Director (Sales and marketing)</p>
               
@@ -167,7 +177,7 @@ We work in the same direction and always show us our flexible attitude be it any
             <div className="test_border">
               <img src={Person2} alt="Archit Rathi" className="about_img" />
             </div>
-            <br></br>
+            
             <div className="person1_intro">
               <p className="person_p">Director (Designing and execution)</p>
               
@@ -184,7 +194,7 @@ We work in the same direction and always show us our flexible attitude be it any
             <div className="test_border">
               <img src={Person3} alt="Kuldeep Bhatnaker" className="about_img" />
             </div>
-            <br></br>
+            
             <div className="person1_intro">
               <p className="person_p">Director (Execution and Planning)</p>
               
@@ -201,7 +211,7 @@ We work in the same direction and always show us our flexible attitude be it any
             <div className="test_border">
               <img src={Person4} alt="Kuldeep Bhatnaker" className="about_img" />
             </div>
-            <br></br>
+            
             <div className="person1_intro">
               <p className="person_p">Senior Designer</p>
               
@@ -219,7 +229,7 @@ We work in the same direction and always show us our flexible attitude be it any
               <img src={Person5} alt="Divyanshi Singh" className="about_img" />
             </div>
 
-            <br></br>
+            
             <div className="person1_intro">
               <p className="person_p">Chief Technical Officer</p>
               
