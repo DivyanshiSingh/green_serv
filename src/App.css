@@ -16,6 +16,12 @@
   
   /* overflow: hidden; */
 }
+html{
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 .footer-space{
   margin-bottom: 300px;
 }
@@ -33,4 +39,10 @@ footer{
 }
 .loader{
   margin: 0 auto;
+}
+
+@media screen and (max-width:426px) {
+  .footer-space{
+    margin-bottom: 0;
+  }
 }

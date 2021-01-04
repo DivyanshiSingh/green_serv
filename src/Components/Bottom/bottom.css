@@ -97,3 +97,9 @@
 .about_heading wrapper{
     
 }
+
+@media screen and (max-width: 426px) {
+    .bottom_out{
+        position: relative;
+    }
+}
