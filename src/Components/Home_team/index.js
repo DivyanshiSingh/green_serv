@@ -83,14 +83,12 @@ function HomeTeam() {
               db.collection("users").add({
                 phone,
               }).then((doc)=>{
-                console.log(doc);
                 emailjs.send(emailConfig.serviceId, emailConfig.templateId2,{
                   from_name: 'arbitrary user',
                   to_name: "GreenServ",
                   phone,
 
                 }, emailConfig.userId).then((result)=>{
-                  console.log(result.text);
                   setPhone('');
                   setAlert(SUCCESS_MESSAGE);
                   setOpen(true);

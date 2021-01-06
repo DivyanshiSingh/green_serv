@@ -69,13 +69,15 @@
     }
     .drawer-item{
         padding: 1em 2em;
-        display: flex;
-        /* justify-content: space-around;s */
-        align-items: center;
         color: #2b6b68;
     }
     .drawer-item a {
-        margin-left: 0.8em;
+        color: #2b6b68;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        /* justify-content: space-around; */
     }
     .drawer-item:hover{
         background-color: #2b6b68;

@@ -44,32 +44,37 @@ function Navbar() {
         >
           <ul className={`${classes.list} drawer-list`}>
             <li className="drawer-item" onClick={() => setToggleDrawer(false)}>
-              <HomeIcon /> |{" "}
+              
               <Link exact activeClassName="active-class" to="/">
+                <HomeIcon /> |{" "}
                 Home
               </Link>
             </li>
             <li className="drawer-item" onClick={() => setToggleDrawer(false)}>
-							<InfoIcon/> |
+							
               <Link exact activeClassName="active-class" to="/about">
+              <InfoIcon/> |
                 About Us
               </Link>
             </li>
             <li className="drawer-item" onClick={() => setToggleDrawer(false)}>
-							<EmojiPeopleIcon/> |
+							
               <Link exact activeClassName="active-class" to="/services">
+              <EmojiPeopleIcon/> |
                 Services
               </Link>
             </li>
             <li className="drawer-item" onClick={() => setToggleDrawer(false)}>
-							<InsertPhotoIcon/> |
+							
               <Link exact activeClassName="active-class" to="/portfolio">
+              <InsertPhotoIcon/> |
                 Portfolio
               </Link>
             </li>
             <li className="drawer-item" onClick={() => setToggleDrawer(false)}>
-							<PhoneIcon/> |
+							
               <Link exact activeClassName="active-class" to="/contact">
+              <PhoneIcon/> |
                 Contact Us
               </Link>
             </li>
