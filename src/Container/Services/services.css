@@ -33,7 +33,6 @@
     left: -10px;
     height: 30%;
     bottom: 215px;
-    /* top: -110px; */
     z-index: -1;
 }
 .chapter_holder::before{
@@ -61,11 +60,9 @@
     font-size: 4rem;
     font-weight: 600;
     color: #070c1f;
-    /* #02375e; */
 }
 .chapter2{
     color: #2b6b68;
-    /* #8b9aa7; */
     font-size: 2rem;
     font-weight: 500;
 }
@@ -73,13 +70,10 @@
     margin-top: 8em;
     padding: 40px 80px;
 }
-.second{
-}
 .service1{
     display: flex;
     height:400px;
     width:96%;
-    /* margin:30px; */
     background-color: white;
     box-shadow: 3px 3px 3px 3px rgb(245, 244, 244);
 }
@@ -337,7 +331,6 @@
 .service_desc-item svg{
     height: 5em;
     fill: teal;
-    /* background-color: teal; */
     margin-left: 1.7em;
     transform: scale(5);
 }
@@ -368,4 +361,84 @@
     background-color: #2b6b68;
     border-radius: 5px;
     
+}
+
+@media screen and (max-width: 426px) {
+    .first{
+        padding: 20px 40px;
+        height: max-content;
+    }
+    .first .chapter_holder{
+        display: none;
+    }
+    .first .chapter{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+    .chapter h1{
+        font-size: 2rem;
+    }
+    .chapter h3{
+        font-size: 1.2rem;
+    }
+    .chapter p {
+        font-size: 0.7rem;
+        text-align: left;
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .service_port{
+        padding: 20px 40px;
+    }
+    .service_port-right{
+        display: none;
+    }
+    .service_port-left{
+        width:100%;
+        padding: 0;
+    }
+    .service_port-left .service_port-content span{
+        font-size: 0.9rem;
+    }
+    .service_port-left .service_port-content .headline h1{
+        font-size: 2rem;
+    }
+    .service_port-content .headline-content{
+        padding: 2em 0;
+    }
+    .service_desc {
+        padding: 20px 40px;
+    }
+    .service_desc-wrapper{
+        padding: 0;
+    }
+    .service_desc-header span{
+        font-size: 0.9rem;
+    }
+    .service_desc-header .headline h1{
+        font-size: 2rem;
+    }
+    .service_desc-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .service_desc-item {
+        padding: 10px 0 !important;
+        text-align: center;
+    }
+    .service_desc-item svg{
+        margin: 0;
+    }
+    .service_desc-item .svg_ctr{
+        width: max-content;
+        margin: 0 auto;
+    }
+    .service_desc_item-content::before{
+        left: 34%;
+    }
+    .service_desc_item-content p{
+        font-size: 0.8rem;
+    }
 }

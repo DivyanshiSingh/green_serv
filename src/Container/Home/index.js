@@ -58,7 +58,6 @@ function Home() {
           
         </div>
       </div>
-      <div className="extra"></div>
       <HomeTeam />
     </motion.div>
   );

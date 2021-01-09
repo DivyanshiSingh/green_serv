@@ -34,7 +34,6 @@ function Bottom() {
             <div className="bottom2">
                 <div className="newsletter">
                     <p className="news">Contact Us</p>
-                    <div className="newsletter_extra"></div>
                     <div className="address">
                         <p className="address_1">
                         2516 orchid, ska greenarch,

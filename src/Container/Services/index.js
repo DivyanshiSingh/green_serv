@@ -1,11 +1,9 @@
 import React from "react";
 import "./services.css";
-import Bottom from "../../Components/Bottom";
 import { motion } from "framer-motion";
 import { containerVariant } from "../../Utils/config";
 import HouseDesign from "../../images/about-03.jpg";
 import { Link } from "react-router-dom";
-import Stepper from "../../Components/Stepper";
 import { ReactComponent as DesignSerice } from "../../images/design.svg";
 import { ReactComponent as Handy } from "../../images/handy.svg";
 import { ReactComponent as Home } from "../../images/house.svg";
@@ -93,7 +91,9 @@ function Services() {
         </div>
         <div className="service_desc-content">
           <div className="service_desc-item">
+            
             <DesignSerice />
+            
             <div className="service_desc_item_head">
               <h3>Construction Services</h3>
             </div>

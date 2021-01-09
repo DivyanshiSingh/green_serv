@@ -3,9 +3,10 @@
   background-color: #fff;
   border-radius: 0 5px 5px 0px;
   margin-top: 2px;
-  padding: 2px 0;
+  
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   -webkit-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
   -moz-box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
   box-shadow: -2px 2px 5px 0px rgba(50, 50, 50, 0.7);
@@ -31,9 +32,15 @@
   color: #2b6b68;
   font-size: 0.8em;
   font-weight: 400;
-  padding: 10px 2px;
+  padding: 8px 2px;
 }
 .icon2:hover {
   width: 150px;
   transition: ease-in 0.2s;
+}
+
+@media screen and (max-width: 426px) {
+  .icon2{
+    width: 30px;
+  }
 }

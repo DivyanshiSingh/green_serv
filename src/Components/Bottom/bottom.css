@@ -94,6 +94,34 @@
     width:100%;
     z-index: -1;
 }
-.about_heading wrapper{
-    
+@media screen and (max-width: 426px) {
+    .bottom_out{
+        position: relative;
+    }
+    .bottom{
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom1 {
+        width: 100%;
+    }
+    .bottom2{
+        width: 100%;
+        text-align: left;
+        padding: 20px 0;
+    }
+    .news{
+        padding: 0;
+    }
+    .bottom3, .bottom4{
+        width: 100%;
+        text-align: left;
+        padding: 20px 0;
+    }
+    .bottom3 .address, .bottom4 .address{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }

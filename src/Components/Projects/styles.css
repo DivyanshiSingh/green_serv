@@ -21,4 +21,34 @@
   justify-content: center;
   
 }
+@media screen and (max-width: 426px) {
+  .projects{
+    padding: 3em 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 550px;
+  }
+  .projects_left, .projects_right{
+    width: 100%;
+    display: block;
+    height: max-content;
+  }
+  .projects_left .heading h1 {
+    font-size: 1.2rem;
+  }
+  .projects_left .paragraph p {
+    font-size: 0.7rem;
+    padding: 1.2em 0;
+  }
+  .projects_right{
+    padding: 1em 0;
+  }
+  .projects_right .car_container{
+    width: 100%;
+  }
+  .slick-next, .slick-prev {
+    display: none !important;
+  }
+}
 

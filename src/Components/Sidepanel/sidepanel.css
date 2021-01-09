@@ -215,3 +215,30 @@
     -moz-transition: opacity .2s ease-out;
     transition: opacity .2s ease-out;
 }
+
+@media screen and  (max-width: 426px) {
+  .action, .action_call{
+    width: 30px;
+    height: 30px;
+  }
+  .action svg{
+    font-size: 1.5em;
+  }
+  .side_panel{
+    right: -200px;
+  }
+  .action_call svg {
+    font-size: 1.1em;
+  }
+  .sidebar {
+    width: 200px
+  }
+  .sidebar-open {
+    transform: translateX(-200px);
+    /* display: none; */
+    transition: ease-out 0.5s;
+  }
+  .sidebar_button{
+    width: 100%;
+  }
+}

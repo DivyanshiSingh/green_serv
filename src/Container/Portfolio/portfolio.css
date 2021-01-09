@@ -1,244 +1,348 @@
-.describe{
-    width: 70%;
-    padding-left:30px;
-    /* padding-top:30px; */
-    color:grey;
-    
-    
-
+.describe {
+  width: 70%;
+  padding-left: 30px;
+  /* padding-top:30px; */
+  color: grey;
 }
-.description{
-    font-weight:500;
-    font-size: 22px;
+.description {
+  font-weight: 500;
+  font-size: 22px;
 }
 
-.portfolio{
-    display: flex;
-    
+.portfolio {
+  display: flex;
 }
-.portfolio_left{
-    width: 60%; 
-    background-color: white;
-    height: 92vh;
-    overflow-y: scroll;
+.portfolio_left {
+  width: 60%;
+  background-color: white;
+  height: 92vh;
+  overflow-y: scroll;
 }
-.portfolio_right{
-    width: 40%;
-    background-color: teal;
-    height: 92vh;
-    overflow: hidden;
-    position: relative;
+.portfolio_right {
+  width: 40%;
+  background-color: teal;
+  height: 92vh;
+  overflow: hidden;
+  position: relative;
 }
-.portfolio_right .portfolio-image-frame img, video {
-    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    
+.portfolio_right .portfolio-image-frame img,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.portfolio-image-frame {
+  /* animation: zoom 10s linear infinite; */
 
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-.portfolio-image-frame{
-    /* animation: zoom 10s linear infinite; */
-    
-    position: absolute;
-    top:0;
-    right:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-}
-.port-overlay{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    background-color: rgba(20, 21, 24, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.port-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: rgba(20, 21, 24, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .port-overlay .port-desc {
-    opacity: 1;
-    color: white;
+  opacity: 1;
+  color: white;
 }
-.port-desc{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.port-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.port-desc hr{
-    width: 90px;
-    margin: 0.4em 0;
-    border:  2px solid teal;
-    /* animation: length 1s ease-in-out infinite; */
+.port-desc hr {
+  width: 90px;
+  margin: 0.4em 0;
+  border: 2px solid teal;
+  /* animation: length 1s ease-in-out infinite; */
 }
-.port-desc h1{
-    font-weight: 700;
-    letter-spacing: 1px;
+.port-desc h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .port-desc p {
-    font-weight: 300;
-    font-size: 0.9em;
+  font-weight: 300;
+  font-size: 0.9em;
 }
 .port-desc a {
-    padding: 10px 20px;
-    color: white;
-    background-color: teal;
-    margin: 0.2em 0;
-    width: max-content;
-    font-size: 0.9em;
-    font-weight: 300;
-    text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: teal;
+  margin: 0.2em 0;
+  width: max-content;
+  font-size: 0.9em;
+  font-weight: 300;
+  text-decoration: none;
 }
-.port-desc a:hover{
-    text-decoration: none;
-    background-color: rgb(4, 99, 99);
+.port-desc a:hover {
+  text-decoration: none;
+  background-color: rgb(4, 99, 99);
 }
-.port-hint{
-    display: block;
-    position: relative;
-    width: 25px;
-    height: 40px;
-    border-radius: 15px;
-    border: solid 2px teal;
-    opacity: 1;
+.port-hint {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 40px;
+  border-radius: 15px;
+  border: solid 2px teal;
+  opacity: 1;
+}
+.port-hint span::before {
+  content: "Scroll Down";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  width: 100px;
+  text-align: right;
+  position: absolute;
+  bottom: -60px;
+  right: -38px;
+  color: #fff;
+  transform: rotate(90deg);
+}
+.port-hint span::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: teal;
+  position: absolute;
+  top: 12px;
+  left: 45%;
+  animation: mouse 1s ease-in-out infinite;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes mouse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(9px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes length {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.port-grid-1 {
+  display: flex;
+  flex-direction: row;
+}
+.grid-left,
+.grid-right {
+  height: 350px;
+  width: 432px;
+  background-color: white;
+}
+
+.grid-left-img,
+.grid-right-img {
+  height: 250px;
+  width: 350px;
+  margin-top: 40px;
+  /* margin-left:40px;
+    margin-right:40px; */
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 200;
+  box-shadow: 0 0 5 5 grey;
+}
+.grid-left-image:hover,
+.grid-right-image:hover {
+  height: 260px;
+  width: 360px;
+  transition: opacity 0.2s ease-out;
+  box-shadow: 3px 3px 3px rgb(173, 173, 173);
+}
+.grid-right-img {
+  margin-left: 30px;
+  margin-right: 40px;
+}
+.grid-left-img {
+  margin-left: 50px;
+  margin-right: 30px;
+}
+.grid-left-image,
+.grid-right-image {
+  height: 250px;
+  width: 350px;
+  border-radius: 5px;
+}
+
+.grid-heading-left-1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(41, 40, 40);
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.grid-heading-right-2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(179, 176, 176);
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.grid-heading-right-1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(41, 40, 40);
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.grid-heading-left-2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(179, 176, 176);
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.port-grid {
+  position: relative;
+  /* overflow-y: scroll; */
+}
+
+
+@media screen and (max-width:426px) {
+	.portfolio{
+		display: flex;
+		flex-direction: column-reverse;
+		position: relative;
+		overflow: hidden;
+	}
+	.portfolio_right{
+		width: 100%;
+		height: 200px;
+		position: fixed;
+		margin-top: 60px;
+		top: 0;
+	}
+	.portfolio_left{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 100%;
+		width: 100%;
+		overflow-y: hidden;
+		margin-top: 200px;
+	}
+	.port-grid{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		width: 100%;
+	}
+	.port-grid-1{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.grid-left,
+.grid-right{
+	width: max-content;
+	height: max-content;
+	padding: 1em 1em;
+}
+.grid-heading-left-1, .grid-heading-right-1{
+	font-size: 12px;
+	margin: 0;
+}
+.grid-heading-left-2, .grid-heading-right-2{
+	font-size: 12px;
+	margin: 0;
+}
+.grid-left-img,.grid-right-img{
+	width:max-content;
+	height: max-content;
+	margin: 0;
+}
+.grid-left-image,.grid-right-image{
+	width: 150px;
+	height: 100px;
+}
+.grid-left-image:hover,
+.grid-right-image:hover{
+	width: 150px;
+	height: 100px;
+}
+.port-overlay{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+.port-overlay .port-hint{
+	width: 15px;
+	height:30px;
 }
 .port-hint span::before{
-    content: 'Scroll Down';
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 10px;
-    width: 100px;
-    text-align: right;
-    position: absolute;
-    bottom: -60px;
-    right: -38px;
-    color: #fff;
-    transform: rotate(90deg);
+	display: none;
 }
 .port-hint span::after{
-    content: '';
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: teal;
-    position: absolute;
-    top: 12px;
-    left: 45%;
-    animation: mouse 1s ease-in-out infinite;
+	top: 5px;
+	left: 40%;
+	animation: mouseResponsive 1s ease-in-out infinite;
 }
-@keyframes zoom{
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
+.port-desc {
+	padding: 0 30px ;
+	
+	margin: 0 auto;
 }
-
-@keyframes mouse{
-    0% {
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(9px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+.port-desc h1{
+	font-size: 1.5rem;
 }
-@keyframes length{
-    0% {
-        transform: translateX(0);
-    }
-    50%{
-        transform: translateX(150px);
-    }
-    100% {
-        transform: translateX(0);
-    }
+.port-desc hr, .port-desc a{
+	margin: 0 auto;
 }
-.port-grid-1{
-    display:flex;
-    flex-direction: row;
-
+.port-desc a {
+	margin-top: 20px;
 }
-.grid-left, .grid-right{
-    height: 350px;
-    width: 432px;
-    background-color:white;
+.port-desc p {
+	display: none;
 }
 
-.grid-left-img, .grid-right-img{
-    height:250px;
-    width:350px;
-    margin-top:40px;
-    /* margin-left:40px;
-    margin-right:40px; */
-    background-color: #fff;
-    border-radius: 5px;
-    z-index: 200;
-    box-shadow: 0 0 5 5 grey;
-
+@keyframes mouseResponsive {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(13px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.grid-left-image:hover, .grid-right-image:hover{
-    height:260px;
-    width:360px;
-    transition: opacity .2s ease-out;
-    box-shadow:   3px 3px 3px rgb(173, 173, 173);
-    
-}
-.grid-right-img{
-    margin-left:30px;
-    margin-right:40px;
-    
-}
-.grid-left-img{
-    margin-left:50px;
-    margin-right:30px;
-}
-.grid-left-image, .grid-right-image{
-    height:250px;
-    width:350px;
-    border-radius: 5px;
-}
-
-.grid-heading-left-1{
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(41, 40, 40);
-    margin-left:50px;
-    margin-top: 10px;
-}
-.grid-heading-right-2{
-    font-size: 13px;
-    font-weight: 400;
-    color: rgb(179, 176, 176);
-    margin-left:30px;
-    margin-top: 5px;
-
-}
-.grid-heading-right-1{
-    font-size: 20px;
-    font-weight: 500;
-    color: rgb(41, 40, 40);
-    margin-left:30px;
-    margin-top: 10px;
-}
-.grid-heading-left-2{
-    font-size: 13px;
-    font-weight: 400;
-    color: rgb(179, 176, 176);
-    margin-left:50px;
-    margin-top: 5px;
-
-}
-
-.port-grid{
-    position: relative;
-    /* overflow-y: scroll; */
 }
