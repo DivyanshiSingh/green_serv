@@ -372,7 +372,6 @@
 .content{
     width:70%;
     height:400px;
-    /* padding-right: 10px; */
 }
 .bold{
     color:#2b6b68;
@@ -387,5 +386,10 @@
 }
 .image_wrapper{
     padding-left:40px;
-    /* padding-bottom: 50px; */
+}
+.content-1{
+    width:70%;
+    height:400px;
+    padding-left: 40px;
+    
 }
