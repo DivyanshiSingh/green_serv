@@ -6,9 +6,9 @@ import Person5 from "../../images/divyanshi.jpg";
 import Person1 from "../../images/aditya.jpg";
 import Person2 from "../../images/golu.jpg";
 import Person4 from "../../images/rishabh.jpg";
-import Person3 from "../../images/golu.jpg";
+import Person3 from "../../images/Kuldeep.jpg";
 import Panel from "../../images/image_outer.jpg";
-
+import Panel1 from "../../images/Panel1.jpg";
 import Service1 from "../../images/service1.jpg";
 import Service2 from "../../images/service2.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -103,7 +103,41 @@ function About() {
           </div>
         </div>
       </div>
+
+      
+      
       <About_banner />
+
+    {/* About ============== About */}
+      <div className="wrapper">
+      <div className="heading">
+          <hr />
+          <h1> Our roots, our pride </h1>{" "}
+        </div>{" "}
+      <div className="wrapper2">
+
+      <div className="image_wrap">
+      <img src={Panel1} alt="panel image"/>
+
+      </div>
+      <div className="content-1">
+        <p className="non_bold">
+          Owing a beautiful home is a dream for everyone. However, it is coming up as a struggle now days. For us, interior is not only putting few decor items with interesting colors, it is our devotion. Greenserv makes your mind still and provide you the best-in-class Interior services and that too in a cost effective way. Our in-house Designing and Execution team helps you with practical designs and hand-picked authentic products, which in result gives you the full assurance of quality.
+        </p>
+        <br></br>
+        <p className="non_bold">
+          Our cumulative experience is of around 39 years, however we started our journey in the year 2015 and never looked back. Since our inception, we have successfully completed more than 750+ projects and the numbers keep on increasing every month. At Greenserv, we promise you to not leave your place until we make it a dream come true for you. Let us solve the puzzle going on in your mind, call us for a free consultation.
+        </p>
+        
+
+      </div>
+        
+      
+      
+      </div>
+      </div>
+
+
       {/* Shared Values */}
 
       <div className="wrapper">
@@ -153,7 +187,7 @@ We work in the same direction and always show us our flexible attitude be it any
       <div className="wrapper">
         <div className="heading">
           <hr />
-          <h1> A Team United by Shared Values </h1>{" "}
+          <h1> A Team United by Values </h1>{" "}
         </div>{" "}
         <br></br>
         <br></br>
@@ -253,17 +287,17 @@ We work in the same direction and always show us our flexible attitude be it any
         <div className="durability">
           <ThumbsUp className="banner2_icon"/>
           <p className="banner2_1">Durability</p>
-          <p className="banner2_2">Exclusive 10 year durable</p>
+          
         </div>
         <div className="modern">
           <House className="banner2_icon"/>
           <p className="banner2_1">Modern interior</p>
-          <p className="banner2_2">Exclusive 10 year warranty</p>
+          
         </div>
         <div className="professional">
           <Team className="banner2_icon"/>
           <p className="banner2_1">Professional team</p>
-          <p className="banner2_2">Many awards in the interior design</p>
+          
         </div>
       </div>
       {/* quote */}
