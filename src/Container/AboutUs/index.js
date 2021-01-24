@@ -15,6 +15,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import ThumbsUp from '@material-ui/icons/ThumbUpSharp';
 import House from '@material-ui/icons/HouseOutlined';
 import Team from '@material-ui/icons/Group';
+import User from '@material-ui/icons/Person';
 import { Icon } from "@material-ui/core";
 import Carousel from "../../Components/Carousel";
 import { testimonialData } from "./constant";
@@ -35,7 +36,10 @@ const Card = ({description, name, location, img_url, rating}) => {
   return (
     <div className="testimonial_card">
       <div className="testimonial_card_head">
-        <img src={img_url} alt="customer"/>
+        <div className="testimonial_card_img">
+          <User/>
+        </div>
+        
         <div className="head_desc">
           <h3>{name}</h3>
           <small>{location}</small>

@@ -324,8 +324,20 @@
 .testimonial_card_head {
     display: flex;
 }
-.testimonial_card_head img{
+.testimonial_card_img{
     border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    background-color: #eeeeee;
+}
+.testimonial_card_img svg{
+    font-size: 25px;
+    position: absolute;
+    top: 18%;
+    left:17%;
+    color:#acadad;
+    margin: 0 auto;
 }
 .testimonial_card_head .head_desc{
     align-self: center;

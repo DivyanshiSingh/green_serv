@@ -58,10 +58,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -70,10 +66,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -87,10 +79,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -99,10 +87,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -117,10 +101,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -129,10 +109,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -148,10 +124,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -160,10 +132,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -177,10 +145,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -189,10 +153,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -207,10 +167,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -219,10 +175,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -237,10 +189,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -249,10 +197,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -268,10 +212,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -280,10 +220,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -299,10 +235,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -311,10 +243,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -330,10 +258,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -342,10 +266,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -360,10 +280,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -372,10 +288,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -389,10 +301,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -401,10 +309,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
@@ -419,10 +323,6 @@ function Portfolio() {
                     className="grid-left-image"
                   />
                 </div>
-                <div className="grid-left-heading">
-                  <p className="grid-heading-left-1">Make Decor Lively</p>
-                  <p className="grid-heading-left-2">Design / Lively</p>
-                </div>
               </div>
               <div className="grid-right">
                 <div className="grid-right-img">
@@ -431,10 +331,6 @@ function Portfolio() {
                     alt="study_image"
                     className="grid-right-image"
                   />
-                </div>
-                <div className="grid-right-heading">
-                  <p className="grid-heading-right-1">Welcome To The Future</p>
-                  <p className="grid-heading-right-2">Architecture / Interior</p>
                 </div>
               </div>
             </div>
